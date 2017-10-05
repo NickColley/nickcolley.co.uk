@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title | default: 'home' }} - nickcolley developer + designer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style media="screen">
+      *, *:after, *:before {
+        box-sizing: inherit;
+      }
+
+      *:focus {
+        outline: 2px solid blue;
+        outline-offset: 2px;
+      }
+
+      html {
+        box-sizing: border-box;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        background-color: #FAFAFA;
+        color: #222;
+        font-family: -apple-system, georgia, serif;
+        font-size: 25px;
+        line-height: 2.2rem;
+      }
+
+      @media (max-width: 30rem) {
+        html {
+          font-size: 18px;
+        }
+      }
+
+      body {
+        margin: 0;
+        max-width: 35rem;
+        padding: 2rem 1rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      a {
+        color: blue;
+        text-decoration: none;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        margin-top: 0;
+        margin-bottom: .5em;
+        line-height: 1.2;
+        font-weight: normal;
+        word-break: break-word;
+      }
+
+      p + h2,
+      pre + h2 {
+        margin-top: 2.5rem;
+      }
+
+      hr {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        border-top: 0;
+        border-bottom: 1px dashed #CCC;
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+      }
+
+      pre {
+        overflow-y: auto;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        background-color: #222;
+        color: #EEE;
+        font-size: .8rem;
+        line-height: 1.2rem;
+      }
+
+      figure {
+        margin: 0;
+      }
+
+      .code-class { color: #00BCD4; }
+      .code-prop { color: #8BC34A; }
+      .code-val { color: #FFC107; }
+
+      .highlight .language-css .nc { color: #00BCD4 }
+      .highlight .language-css .nl { color: #8BC34A; }
+      .highlight .language-css .m { color: #FFC107; }
+
+      .heading {
+        font-size: 2.5rem;
+        margin-bottom: 2.5rem;
+      }
+
+      .sub-heading {
+        display: block;
+        font-size: 1.2rem;
+        margin-top: .2rem;
+        font-weight: normal;
+      }
+
+      .menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin: -.75rem;
+        margin-bottom: .75rem;
+      }
+      .menu:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+      .menu-item {
+        float: left;
+        padding: 0;
+        margin: 0;
+      }
+      .menu-item-link {
+        display: block;
+        padding: .75rem;
+      }
+
+      .grid {
+        margin-left: -1rem;
+        margin-right: -1rem;
+      }
+
+      .grid-col {
+        float: left;
+        width: 50%;
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+
+      @media (max-width: 50rem) {
+        .grid-col {
+          width: 100%;
+        }
+      }
+
+      .post-list {
+        margin-top: 0;
+        padding-left: 0;
+        list-style: none;
+      }
+
+      .post-list-heading {
+        font-size: 1rem;
+      }
+
+      .post-heading {
+        margin-bottom: 0;
+      }
+
+      .post-meta {
+        margin-bottom: 2rem;
+      }
+
+      .pull-left {
+        float: left;
+      }
+
+      .pull-right {
+        float: right;
+      }
+
+      .text-right {
+        text-align: right;
+      }
+
+      .text-center {
+        /*text-align: center;*/
+      }
+
+      .clearfix:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+  </body>
+
+</html>

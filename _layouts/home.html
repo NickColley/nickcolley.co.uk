@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<div class="home">
+  <h1 class="heading">
+    nickcolley
+    <small class="sub-heading">developer – designer</small>
+  </h1>
+  <hr>
+  <nav role="navigation">
+    <h2>social</h2>
+    <ul class="menu">
+      <li class="menu-item">
+        <a class="menu-item-link" href="//www.twitter.com/nickcolley">twitter</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-item-link" href="//codepen.io/nickcolley">
+          codepen <small>(out of date)</small>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <hr>
+  <h2>posts</h2>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <small class="post-meta">{{ post.date | date: "%B %-d, %Y" | downcase }}</small>
+
+        <h3 class="post-list-heading">
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h3>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

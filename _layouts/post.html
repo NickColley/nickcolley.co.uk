@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <h1 class="heading post-heading" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="sub-heading post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date: "%B %-d, %Y" | downcase }}
+      </time>
+      –
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">nick colley</span>
+      </span>
+    </p>
+  </header>
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+  <hr>
+  <p class="clearfix">
+    <a class="pull-left" href="/">more posts</a>
+    <a class="pull-right" href="//www.twitter.com/nickcolley">@nickcolley</a>
+  </p>
+</article>

@@ -22,10 +22,32 @@ layout: default
     </ul>
   </nav>
   <hr>
+  <h2>projects</h2>
+  <ul class="post-list">
+    <li class="post-list-item">
+      <small class="post-meta">may 26, 2018</small>
+
+      <h3 class="post-list-heading">
+        <a class="post-link" href="https://do-not-track-third-party-embeds.glitch.me">
+          ‘Do Not Track’ (DNT) with Third-party Embeds 🕵️🔎
+        </a>
+      </h3>
+    </li>
+    <li class="post-list-item">
+      <small class="post-meta">feb 13, 2018</small>
+
+      <h3 class="post-list-heading">
+        <a class="post-link" href="https://github.com/nickcolley/jest-axe">
+          jest-axe: Custom Jest matcher for aXe for testing accessibility ♿️🃏
+        </a>
+      </h3>
+    </li>
+  </ul>
+  <hr>
   <h2>posts</h2>
   <ul class="post-list">
     {% for post in site.posts %}
-      <li>
+      <li class="post-list-item">
         <small class="post-meta">{{ post.date | date: "%B %-d, %Y" | downcase }}</small>
 
         <h3 class="post-list-heading">

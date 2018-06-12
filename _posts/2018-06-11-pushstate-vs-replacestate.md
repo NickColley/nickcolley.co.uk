@@ -15,7 +15,7 @@ You can also [add, remove or edit history  entries](https://developer.mozilla.or
 
 They both achieve similar goals, both methods will let the user share or bookmark the current page.
 
-The main difference between them is the experience a user will have when using with their history afterwards, for instance when they press 'back' or when they browse their history.
+The main difference between them is the experience a user will have when using their history afterwards, for instance when they press 'back' or when they browse their history.
 
 ## pushState
 

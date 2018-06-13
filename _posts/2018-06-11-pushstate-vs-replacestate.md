@@ -42,7 +42,8 @@ Note on accessibility: The example libraries take care to re-introduce some of t
 
 If you were to use `replaceState` three times, a user would only have to press back once.
 
-If your browser's history were implemented using the History Web API, this method would be used when users click on internal 'anchor' link to jump to a section within the page.
+You may decide that you want to keep a user's state the same when they go 'back' to a page, but without adding or changing the history.
+In these cases you could consider [`sessionStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage).
 
 ### When to use replaceState
 
@@ -56,5 +57,7 @@ You'll be using `replaceState` more often, since it tends to work better with co
 
 - [A tab component](https://inclusive-components.design/tabbed-interfaces/)
 - [An accordion component](https://inclusive-components.design/collapsible-sections/)
+
+Update: Thanks to Adam Silver for a correction around internal anchor links 🙂
 
 Did I miss something, or there a different way of using this API? Send me a tweet [@nickcolley](https://twitter.com/nickcolley)

@@ -20,6 +20,10 @@ dateformat: "%b %-d, %Y"
 # Build settings
 markdown: kramdown
 
+# Plugins
+plugins:
+  - jekyll-sitemap
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

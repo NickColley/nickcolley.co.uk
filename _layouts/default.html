@@ -81,13 +81,18 @@
 
       figure {
         margin: 0;
-      }
-
-      ul, p, figure {
         margin-bottom: 2rem;
       }
 
-      ul {
+      img {
+        max-width: 100%;
+      }
+
+      ol, ul, p, figure {
+        margin-bottom: 2rem;
+      }
+
+      ol, ul {
         padding-left: 1em;
       }
 
@@ -212,6 +217,7 @@
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
+        {% include footnotes.html %}
       </div>
     </main>
   </body>

@@ -57,15 +57,13 @@ layout: default
       {% if post.redirect_url %}
         {% capture post_url %}{{ post.redirect_url }}{% endcapture %}
       {% endif %}
-      {% if not post.draft %}
-        <li class="post-list-item">
-          <small class="post-meta">{{ post.date | date: "%B %-d, %Y" | downcase }}</small>
+      <li class="post-list-item">
+        <small class="post-meta">{{ post.date | date: "%B %-d, %Y" | downcase }}</small>
 
-          <h3 class="post-list-heading">
-            <a class="post-link" href="{{ post_url }}">{{ post.title | escape }}</a>
-          </h3>
-        </li>
-      {% endif %}
+        <h3 class="post-list-heading">
+          <a class="post-link" href="{{ post_url }}">{{ post.title | escape }}</a>
+        </h3>
+      </li>
     {% endfor %}
   </ul>
 </div>

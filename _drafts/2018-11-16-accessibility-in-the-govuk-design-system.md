@@ -74,19 +74,19 @@ I was invited to speak blah https://www.designsystemslondon.com/
   {% capture slideText %}
     Hey everyone, I’m Nick Colley, I’m a frontend developer at the Government Digital Service
   {% endcapture %}
-  {% include dsl-accessibility-slide.html slide="1" text=slideText %}
+  {% include dsl-accessibility-slide.html slide="01" text=slideText %}
 
   {% capture slideText %}
     Today I wanted to talk to you about accessibility in the GOV.UK Design System
   {% endcapture %}
-  {% include dsl-accessibility-slide.html slide="2" text=slideText %}
+  {% include dsl-accessibility-slide.html slide="02" text=slideText %}
 
   {% capture slideText %}
     GOV.UK is the best place to find government services and information online.
     <br/>
     You might have used GOV.UK to...
   {% endcapture %}
-  {% include dsl-accessibility-slide.html slide="3" text=slideText %}
+  {% include dsl-accessibility-slide.html slide="03" text=slideText %}
 </div>
 
 

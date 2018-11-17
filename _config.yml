@@ -24,12 +24,6 @@ markdown: kramdown
 plugins:
   - jekyll-sitemap
 
-defaults:
-  - scope:
-      path: "assets/img/dsl-accessibility-slides"
-    values:
-      dsl-accessibility-slides: true
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

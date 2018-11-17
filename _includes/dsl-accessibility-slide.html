@@ -1,6 +1,10 @@
+{% assign images = site.static_files | where_exp: "item", "item.path contains 'dsl-accessibility-slides/'" %}
+{% assign optimisedImages = site.static_files | where_exp: "item", "item.path contains 'dsl-accessibility-slides-optimised/'" %}
+{% assign currentImages = images | where_exp: "item", "item.basename contains include.slide" %}
+{% assign currentOptimisedImages = optimisedImages | where_exp: "item", "item.basename contains include.slide" %}
 <figure>
-  <a href="/assets/img/dsl-accessibility-slides/dsl-accessibility-slides-0{{ include.slide }}.png">
-    <img src="/assets/img/dsl-accessibility-slides-optimised/dsl-accessibility-slides-0{{ include.slide }}.jpg" alt="">
+  <a href="{{ currentImages[0].path }}">
+    <img src="{{ currentOptimisedImages[0].path }}" alt="">
     <span class="visually-hidden">Open full size image for slide {{ include.slide }}</span>
   </a>
   <figcaption>

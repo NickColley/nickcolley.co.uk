@@ -5,39 +5,79 @@ date:   2018-11-16 00:00:00 +0000
 footnotes:
   - id: tax-your-vehicle
     text: |
-      <a href="https://www.gov.uk/vehicle-tax">https://www.gov.uk/vehicle-tax</a>
+      "<a href="https://www.gov.uk/vehicle-tax">Tax your vehicle</a>"
   - id: micropig
     text: |
       I was introduced to this awesome bit of guidance from
       <a href="https://twitter.com/binaryberry/status/1057202455358914560">Tatiana Stantonian</a>
       <br>
-      <a href="https://www.gov.uk/guidance/keeping-a-pet-pig-or-micropig">https://www.gov.uk/guidance/keeping-a-pet-pig-or-micropig</a>
+      "<a href="https://www.gov.uk/guidance/keeping-a-pet-pig-or-micropig">Keeping a pet pig or 'micropig'</a>"
   - id: register-to-vote
     text: |
-      <a href="https://www.gov.uk/register-to-vote">https://www.gov.uk/register-to-vote</a>
+      "<a href="https://www.gov.uk/register-to-vote">Register to vote</a>"
+  - id: before-govuk
+    text: |
+      You can read the beginnings of GDS and GOV.UK in
+      "<a href="https://gds.blog.gov.uk/story/">A GDS story</a>"
+  - id: 750-domains-to-one-top-level
+    text: |
+      In Martha Lane Fox's report <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/60993/Martha_20Lane_20Fox_s_20letter_20to_20Francis_20Maude_2014th_20Oct_202010.pdf">"Revolution not Evolution"</a>
+      <br/>
+      "NolO feel it is preferable to go from 750 top level website domains (eg www.cabinetoffice.gov.uk) to a single top level website domain for all of central government."
+  - id: 300k-content
+    text: |
+      If you query
+      <a href="https://www.gov.uk/api/search.json">GOV.UK's Search API</a>
+      it will give you a total, as of writing this is 376,518.
+  - id: visits-a-month
+    text: |
+      <a href="https://www.gov.uk/performance/site-activity">Activity on GOV.UK: web traffic</a>
+  - id: govuk-services
+    text: |
+      You can see how many services there are with the
+      <a href="https://www.gov.uk/performance/services">Service data dashboard</a>.
+      <br/>
+      As of writing there are 780 services, with 1.03 billion completed transactions per year. (384 services out of 780.)
+  - id: step-by-step
+    text: |
+      <a href="https://gds.blog.gov.uk/2018/10/17/building-a-better-gov-uk-step-by-step">Building a better GOV.UK, step by step</a>.
+
+  - id: start-pages-pattern
+    text: |
+      Transactional services have a Start page that is on www.GOV.UK and links to a specific service domain.
+      <ul>
+        <li><a href="https://design-system.service.gov.uk/patterns/start-pages">Start pages pattern</a></li>
+        <li><a href="https://docs.publishing.service.gov.uk/document-types/transaction.html#example-pages">Examples of Start Pages (transaction pages)</a>
+      </ul>
+
 ---
 
 <style>
   .slides img {
     width: 30%;
     min-width: 386px;
-    float: right;
-    margin-left: 1rem;
     border: 3px solid #9E9E9E;
   }
 
-  .slides figure::after {
-    content: '';
-    clear: both;
-    display: table;
+  @media (min-width: 50rem) {
+    .slides img {
+      float: right;
+      margin-left: 1rem;
+    }
+
+    .slides figure::after {
+      content: '';
+      clear: both;
+      display: table;
+    }
+
+    .slides figcaption {
+      font-size: .8rem;
+    }
   }
 
-  .slides figcaption {
-    font-size: .8rem;
-  }
-
-  .slides figcaption p:first-child::before,
-  .slides figcaption p:last-child::after {
+  .slides figcaption > :first-child::before,
+  .slides figcaption > :last-child::after {
     position: relative;
     top: .5rem;
     display: inline-block;
@@ -45,12 +85,12 @@ footnotes:
     line-height: 0;
   }
 
-  .slides figcaption p:first-child::before {
+  .slides figcaption > :first-child::before {
     content: '“';
     margin-right: .1em;
   }
 
-  .slides figcaption p:last-child::after {
+  .slides figcaption > :last-child::after {
     content: '”';
     margin-left: .1em;
   }
@@ -59,6 +99,7 @@ footnotes:
     margin-bottom: 1rem;
   }
 
+  .slides figcaption ul:last-child,
   .slides figcaption p:last-child {
     margin-bottom: 0;
   }
@@ -131,32 +172,44 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
   {% include dsl-accessibility-slide.html slide="03" text=slideText %}
 
   {% capture slideText %}
-    <p>Before GOV.UK, there were a ton of differents websites that looked and behaved differently but fundamentally served a similar purpose.</p>
+    <p>
+      {% include footnote-link.html id="before-govuk" text="Before GOV.UK" %},
+      there were a ton of differents websites that looked and behaved differently but fundamentally served a similar purpose.
+    </p>
     <p>From the users’ point of view there’s no need for them to be different.</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="08" text=slideText %}
 
   {% capture slideText %}
-    <p>We needed to go from 750 websites domains to one top level domain.</p>
+    <p>
+      We needed to go from
+      {% include footnote-link.html id="750-domains-to-one-top-level" text="750 websites domains to one top level domain" %}.
+    </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="09" text=slideText %}
 
   {% capture slideText %}
     <p>While this has taken time, most content is now in one place with a consistent user experience and brand.</p>
-    <p>We know have more than 300 thousand pieces of content from across government published and</p>
-    <p>GOV.UK now has more visits in a single month than there are people in the UK.</p>
+    <p>
+      We know have more than
+      {% include footnote-link.html id="300k-content" text="300 thousand pieces of content" %}
+      from across government published and
+      GOV.UK now has
+      {% include footnote-link.html id="visits-a-month" text="more visits in a single month than there are people in the UK" %}.
+    </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="10" text=slideText %}
 
   {% capture slideText %}
-    <p>We needed to go from 750 websites domains to one top level domain.</p>
+    <p>But government online is not just content, it also includes transactional services that rely on users inputting data.</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="11" text=slideText %}
 
   {% capture slideText %}
-    <p>But government online is not just content, it also includes transactional services that rely on users inputting data.
-
-    https://www.gov.uk/performance/services</p>
+    <p>
+      There are currently
+      {% include footnote-link.html id="govuk-services" text="780 services that account for over a billion transactions a year" %}.
+    </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="12" text=slideText %}
 
@@ -168,21 +221,21 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
 
   {% capture slideText %}
     <p>From a technical perspective, content can be centralised, services cannot.</p>
-
     <p>
-    This means that departments across the UK are:
-      <ul>
-        <li>Building services in different technical stacks, on different domains.</li>
-        <li>That all needs to look and feel the same.</li>
-      </ul>
+      This means that departments across the UK are,
+      building services in different technical stacks.
+      On different domains.
+      That all need to look and feel the same.
     </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="14" text=slideText %}
 
   {% capture slideText %}
-    <p>For example, a business wanting to hire their first employee needs information and services from 5 different areas of government before they can hire them</p>
-
-    https://gds.blog.gov.uk/2018/10/17/building-a-better-gov-uk-step-by-step/</p>
+    <p>
+      For example, a business wanting to hire their first employee needs
+      {% include footnote-link.html id="step-by-step" text="information and services from 5 different areas of government" %}.
+      before they can hire them.
+    </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="15" text=slideText %}
 
@@ -192,7 +245,11 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
   {% include dsl-accessibility-slide.html slide="16" text=slideText %}
 
   {% capture slideText %}
-    <p>The user could start on a content page, which is run by GDS, then they could go through any number of departments running services</p>
+    <p>
+      The user could
+      start on a content page,
+      which is run by GDS, then they could go through any number of departments running services.
+    </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="17" text=slideText %}
 

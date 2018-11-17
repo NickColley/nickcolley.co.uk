@@ -21,7 +21,8 @@ footnotes:
       "<a href="https://gds.blog.gov.uk/story/">A GDS story</a>"
   - id: revolution-not-evolution
     text: |
-      In Martha Lane Fox's report <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/60993/Martha_20Lane_20Fox_s_20letter_20to_20Francis_20Maude_2014th_20Oct_202010.pdf">"Revolution not Evolution"</a>
+      In <a href="https://twitter.com/Marthalanefox">Martha Lane Fox</a>'s report
+      <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/60993/Martha_20Lane_20Fox_s_20letter_20to_20Francis_20Maude_2014th_20Oct_202010.pdf">"Revolution not Evolution"</a>
       <br/>
       "NolO feel it is preferable to go from 750 top level website domains (eg www.cabinetoffice.gov.uk) to a single top level website domain for all of central government."
       <br/>

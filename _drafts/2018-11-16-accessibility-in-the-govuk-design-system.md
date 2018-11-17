@@ -19,11 +19,14 @@ footnotes:
     text: |
       You can read the beginnings of GDS and GOV.UK in
       "<a href="https://gds.blog.gov.uk/story/">A GDS story</a>"
-  - id: 750-domains-to-one-top-level
+  - id: revolution-not-evolution
     text: |
       In Martha Lane Fox's report <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/60993/Martha_20Lane_20Fox_s_20letter_20to_20Francis_20Maude_2014th_20Oct_202010.pdf">"Revolution not Evolution"</a>
       <br/>
       "NolO feel it is preferable to go from 750 top level website domains (eg www.cabinetoffice.gov.uk) to a single top level website domain for all of central government."
+      <br/>
+      "The user should not have to navigate the departmental structure of Government before finding the service or content what they need."
+    count: 2
   - id: 300k-content
     text: |
       If you query
@@ -41,7 +44,6 @@ footnotes:
   - id: step-by-step
     text: |
       <a href="https://gds.blog.gov.uk/2018/10/17/building-a-better-gov-uk-step-by-step">Building a better GOV.UK, step by step</a>.
-
   - id: start-pages-pattern
     text: |
       Transactional services have a Start page that is on www.GOV.UK and links to a specific service domain.
@@ -49,7 +51,196 @@ footnotes:
         <li><a href="https://design-system.service.gov.uk/patterns/start-pages">Start pages pattern</a></li>
         <li><a href="https://docs.publishing.service.gov.uk/document-types/transaction.html#example-pages">Examples of Start Pages (transaction pages)</a>
       </ul>
-
+  - id: govuk-design-system
+    text: |
+      <a href="https://gds.blog.gov.uk/2018/06/22/introducing-the-gov-uk-design-system/">
+        Introducing the GOV.UK Design System
+      </a>
+  - id: disability-facts-and-figures
+    text: |
+      <a href="https://www.gov.uk/government/statistics/disability-facts-and-figures">
+        Disability facts and figures
+      </a>
+  - id: microsoft-inclusive-design
+    text: |
+      Microsoft Inclusive is really well referenced, their new toolkit is really good and worth a read,
+      even if it's confusingly in a PDF...
+      <br>
+      <a href="https://www.microsoft.com/design/inclusive">Microsoft Inclusive Design</a>
+  - id: subtitle-viewers
+    text: |
+      <a href="https://www.3playmedia.com/2015/08/28/who-uses-closed-captions-not-just-the-deaf-or-hard-of-hearing/">
+        Who Uses Closed Captions? Not Just the Deaf or Hard of Hearing
+      </a>
+  - id: regulations
+    text: |
+      <ul>
+        <li>
+          <a href="https://www.gov.uk/guidance/equality-act-2010-guidance">Equality Act 2010: guidance</a>
+        </li>
+        <li>
+          <a href="https://developer.paciellogroup.com/blog/2018/04/eu-directive-on-the-accessibility-of-public-sector-websites-and-mobile-applications">
+            EU Directive on the Accessibility of Public Sector Websites and Mobile Applications
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps">
+            Make your public sector website or app accessible
+          </a>
+        </li>
+      </ul>
+  - id: government-accessibility-requirements
+    text: |
+      I've learnt so much from the Accessibility team at GDS, and this guidance is amazing, which is the basis for the middle section of my talk.
+      <br/>
+      I highly recommend you read this:
+      <a href="https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction">
+        Making your service accessible: an introduction
+      </a>.
+  - id: wcag
+    text: |
+      We follow WCAG 2.1 as a minimum to level AA:
+      <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">
+        Web Content Accessibility Guidelines (WCAG) Overview
+      </a>
+  - id: axe
+    text: |
+      <ul>
+        <li>
+          <a href="https://github.com/dequelabs/axe-core">axe-core</a>
+        </li>
+        <li>
+          <a href="https://github.com/nickcolley/jest-axe">jest-axe</a>
+        </li>
+      </ul>
+  - id: automated-tool-audit
+    text: |
+      <ul>
+        <li>
+          <a href="https://accessibility.blog.gov.uk/2017/02/24/what-we-found-when-we-tested-tools-on-the-worlds-least-accessible-webpage">
+            What we found when we tested tools on the world’s least-accessible webpage
+          </a>
+        </li>
+        <li>
+          <a href="https://alphagov.github.io/accessibility-tool-audit">
+            How do automated accessibility checkers compare?
+          </a>
+        </li>
+      </ul>
+  - id: users-who-change-colours
+    text: |
+      <ul>
+        <li>
+          <a href="https://webaim.org/resources/contrastchecker/">Color Contrast Checker</a>
+        </li>
+        <li>
+          <a href="https://accessibility.blog.gov.uk/2018/08/01/supporting-users-who-change-colours-on-gov-uk">
+            Supporting users who change colours on GOV.UK
+          </a>
+        </li>
+      </ul>
+  - id: external-audit
+    text: |
+      <a href="https://www.gov.uk/service-manual/technology/testing-for-accessibility#getting-an-accessibility-audit">
+        Getting an accessibility audit
+      </a>
+  - id: assistive-technologies-to-test
+    text: |
+      <a href="https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies#what-to-test">
+        Assistive technologies: what to test
+      </a>
+  - id: bladerunner
+    text: |
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/watch?v=qHepKd38pr0">
+            YouTube clip of the Bladerunner scene
+          </a>
+        </li>
+        <li>
+          <a href="https://www.nuance.com/products/help/dragon/dragon-for-mac/enx/Content/Navigation/MouseGrid.html">
+            Dragon Mouse Grid
+          </a>
+        </li>
+      </ul>
+  - id: empathy-lab
+    text: |
+      <a href="https://gds.blog.gov.uk/2018/06/20/creating-the-uk-governments-accessibility-empathy-lab/">
+        Creating the UK government’s accessibility empathy lab
+      </a>
+  - id: no-cost-testing
+    text: |
+      <a href="https://accessibility.blog.gov.uk/2018/09/27/assistive-technology-tools-you-can-use-at-no-cost/">
+        Assistive technology tools you can test with at no cost
+      </a>
+  - id: content-for-everyone
+    text: |
+      <a href="https://accessibility.blog.gov.uk/2017/02/08/advice-for-creating-content-that-works-well-with-screen-readers/">
+        How to create content that works well with screen readers
+      </a>
+  - id: designing-empathy-programs
+    text: |
+      <a href="https://twitter.com/robinmarceline/status/1039321725756891136">
+        @robinmarceline's quote on designing programs to build compassion
+      </a>
+  - id: fake-service
+    text: |
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/watch?v=wprWuTvhec4">
+            Youtube: Building Accessible Components and the GOV.UK Design System
+          </a>
+        </li>
+        <li>
+          <a href="https://accessibility.blog.gov.uk/2018/05/15/what-we-learned-from-getting-our-autocomplete-tested-for-accessibility/">
+            What we learned from getting our autocomplete tested for accessibility
+          </a>
+        </li>
+        <li>
+          <a href="https://design-system.service.gov.uk/components/character-count/#research-on-this-component">
+            Character count component testing and user research
+          </a>
+        </li>
+      </ul>
+  - id: senior-product-manager-quote
+    text: |
+      The quote on screen I actually made up because the real one was not grammatically correct, so this is a bit cheeky but we have consistently seen this in research.
+      <br>
+      Some real quotes:
+      <ul>
+        <li>“[...] the things that would make a service not accessible, the work has already been done by GDS so we don’t have to keep doing it.”</li>
+        <li>"Once we have the first prototype, my starting point is the GOV.UK prototype kit, I trust that I know it's been built with accessibility in mind."</li>
+        <li>"Having the prototyping kit now means that it is accessible," Senior Product Manager</li>
+        <li>"Things like design patterns, 80% has already been done and tested by GDS or other services." UX designer</li>
+      </ul>
+      <br>
+      Thanks to Katie John and Bekki Leaver (GDS User Researchers) for these quotes.
+  - id: problem-with-patterns
+    count: 2
+    text: |
+      This criticism has come from multiple places, and I wanted to highlight it in this talk.
+      <ul>
+        <li>
+          <a href="https://alistapart.com/article/problem-with-patterns">
+            The Problem with Patterns
+          </a>
+        </li>
+        <li>
+          <a href="https://medium.com/@paulmsmith/design-systems-the-means-not-the-end-fc840c21b51e">
+            Design Systems — the means, not the end
+          </a>
+        </li>
+        <li>
+          “These are platforms for us to look at harder problems. [I’m] just cynical of things like design systems seen as ‘the design is done’” – Simon Wilson (<a href="https://twitter.com/ermlikeyeah">@ermlikeyeah</a>)
+        </li>
+      </ul>
+  - id: leonie-watson
+    text: |
+      I've learnt so much from Léonie which is why her work appears multiple times in this talk.
+      <br/>
+      <a href="https://www.youtube.com/watch?v=spxT2CmHoPk">
+        Léonie Watson / Technologic (Human After All): Accessibility remix
+      </a>
 ---
 
 <style>
@@ -123,6 +314,8 @@ I was invited to speak at <a href="https://www.designsystemslondon.com/">Design 
 
 I've put together some of the tweets in a [Twitter moment, if you're into that](https://twitter.com/i/moments/1063848031613845504).
 
+All the sources are linked from the speakers notes in the <a href="#footnotes">footnotes</a>.
+
 <figure>
   <img src="/assets/img/dsl-accessibility-talk.jpg" alt="Nick stood in front of a slide using Star Wars to explain accessibility legislation">
   <figcaption>
@@ -183,7 +376,7 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
   {% capture slideText %}
     <p>
       We needed to go from
-      {% include footnote-link.html id="750-domains-to-one-top-level" text="750 websites domains to one top level domain" %}.
+      {% include footnote-link.html id="revolution-not-evolution" text="750 websites domains to one top level domain" %}.
     </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="09" text=slideText %}
@@ -247,7 +440,7 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
   {% capture slideText %}
     <p>
       The user could
-      start on a content page,
+      {% include footnote-link.html id="start-pages-pattern" text="start on a content page," %}
       which is run by GDS, then they could go through any number of departments running services.
     </p>
   {% endcapture %}
@@ -259,13 +452,17 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
   {% include dsl-accessibility-slide.html slide="18" text=slideText %}
 
   {% capture slideText %}
-    <p>Users should not have to understand how government works.</p>
+    <p>
+    {% include footnote-link.html id="revolution-not-evolution" count="2" text="Users should not have to understand how government works" %}.
+    </p>
     <p>So how do you create a consistent experience for both content and services with distributed teams?</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="19" text=slideText %}
 
   {% capture slideText %}
-    <p>This where the GOV.UK design System comes in, it’s built from years of research and work from teams across government.</p>
+    <p>This where the
+    {% include footnote-link.html id="govuk-design-system" text="GOV.UK Design System" %}
+    comes in, it’s built from years of research and work from teams across government.</p>
     <p>There were already volunteer led projects that laid the foundation but this is the first time we’ve had a dedicated team to work on this problem.</p>
     <p>The GOV.UK Design System brings together styles, components and patterns.</p>
   {% endcapture %}
@@ -294,55 +491,52 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
   {% include dsl-accessibility-slide.html slide="24" text=slideText %}
 
   {% capture slideText %}
-    <p>20% of people in the UK have a disability</p>
+    <p>
+      {% include footnote-link.html id="disability-facts-and-figures" text="20% of people in the UK have a disability" %}
+    </p>
     <p>this could be a visual, hearing, motor or cognitive (affecting memory and thinking) impairment</p>
-    <p>https://www.gov.uk/government/statistics/disability-facts-and-figures</p>
-    <p>66,714,740 total</p>
-    <p>13,342,948 is 20%</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="25" text=slideText %}
 
   {% capture slideText %}
-    <p>https://www.microsoft.com/design/inclusive/</p>
     <p>But if we think about accessibility in terms of exclusion and inclusion, we can think about people’s experience as a spectrum, which includes even more people.</p>
-    <p>The example I’m showing today is from Microsoft’s Inclusive design toolkit.</p>
+    <p>The example I’m showing today is from
+    {% include footnote-link.html id="microsoft-inclusive-design" text="Microsoft’s Inclusive design toolkit" %}.
+    </p>
     <p>It shows how motor based impairments can impact anyone.</p>
     <p>Someone who has lost motor function in one arm might operating a keyboard to be difficult.</p>
     <p>But if you broke your arm skiing, you could experience some of the same barriers.</p>
     <p>This is called a temporary impairment, since over time your arm will heal.</p>
     <p>The final end of the spectrum is a busy new parent who is holding their child, restricting the use of one arm.</p>
     <p>This is a situational impairment, but by designing for someone with a permanent disability we make our services usable to everyone on this spectrum.</p>
-    <p>“By designing for someone with a permanent disability, someone with a situational limitation can also benefit. For example, a device designed for a person who has one arm could be used just as effectively by a person with a temporary wrist injury or a new parent holding an infant.“</p>
-    <p>file:///Users/nickcolley/Downloads/inclusive_toolkit_manual_final.pdf</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="26" text=slideText %}
 
   {% capture slideText %}
     <p>One example of this I wanted to share with you is about subtitles, otherwise known as closed captions.</p>
-    <p>Ofcom did a study which found that 80% of television viewers use subtitles for reasons other than hearing impairments.</p>
+    <p>
+      {% include footnote-link.html id="subtitle-viewers" text="Ofcom did a study" %}
+      which found that 80% of television viewers use subtitles for reasons other than hearing impairments.
+    </p>
     <p>We can see this too in social media, where often videos will autoplay without sound and include subtitles which is useful in situations where you’re on the go and can’t listen to a video.</p>
-    <p>https://www.3playmedia.com/2015/08/28/who-uses-closed-captions-not-just-the-deaf-or-hard-of-hearing/</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="27" text=slideText %}
 
   {% capture slideText %}
     <p>Raise your hand if you work in the public sector, or with charities.</p>
-    <p>Cool</p>
-    <p>In the public sector, there are also two regulations worth noting</p>
+    <p>Cool, this slide is for you 😊</p>
+    <p>In the public sector, there are also
+    {% include footnote-link.html id="regulations" text="two regulations worth knowing" %}
+    </p>
     <p>The Equality Act 2010 legally protects people from discrimination in the workplace and in wider society.</p>
     <p>But more recently there has been the introduction of an EU directive which is more specific to web and mobile applications, so can be enforced easier.</p>
     <p>These useful to make a business case for accessibility in the public sector.</p>
-    <p>https://www.gov.uk/guidance/equality-act-2010-guidance
-    https://developer.paciellogroup.com/blog/2018/04/eu-directive-on-the-accessibility-of-public-sector-websites-and-mobile-applications/
-    https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="28" text=slideText %}
 
   {% capture slideText %}
     <p>Soooo I tried to make a meme, but the EU directive is so long it doesnt really make sense.</p>
-    <p>Cant remember if darth maul gets beaten or not, doesnt the long hair dude get killed? I guess that’s what doing accessibility work is like.</p>
-    <p>https://www.gov.uk/guidance/equality-act-2010-guidance
-    https://developer.paciellogroup.com/blog/2018/04/eu-directive-on-the-accessibility-of-public-sector-websites-and-mobile-applications/</p>
+    <p>Cant remember if Darth Maul gets beaten or not, doesnt the long hair dude get killed? I guess that’s what doing accessibility work is like sometimes...</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="29" text=slideText %}
 
@@ -354,26 +548,30 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
 
   {% capture slideText %}
     <p>
-    To meet government accessibility requirements, digital services must:
+      To meet       
+      {% include footnote-link.html id="government-accessibility-requirements" text="government accessibility requirements" %}
+      , digital services must:
+    </p>
 
     <ul>
       <li>Meet Web Content Accessibility Guidelines version 2.1 at level AA</li>
       <li>Test with assistive technologies</li>
       <li>include people with disabilities in user research</li>
     </ul>
-    </p>
-
-    <p>https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="31" text=slideText %}
 
   {% capture slideText %}
-    <p>So Im going to go through these one by one</p>
+    <p>So I'm going to go through these one by one</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="32" text=slideText %}
 
   {% capture slideText %}
-    <p>If you’ve not heard of WCAG before you can think of it like a standardized accessibility design manual.</p>
+    <p>
+      If you’ve not heard of
+      {% include footnote-link.html id="wcag" text="WCAG (Web Content Accessibility Guidlines)" %}
+      before you can think of it like a standardized accessibility design manual.
+    </p>
     <p>They are an internationally recognised set of recommendations for improving web accessibility.</p>
     <p>They explain how to make digital services, websites and apps accessible to everyone</p>
   {% endcapture %}
@@ -382,13 +580,13 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
   {% capture slideText %}
     <p>
       This includes users with impairments to their:
-      <ul>
-        <li>vision - this includes people with sight impairments and colour blind people</li>
-        <li>hearing - like people who are deaf or hard of hearing</li>
-        <li>motor - like those who find it difficult to use a mouse or keyboard</li>
-        <li>cognitive - like people with dyslexia, autism or learning difficulties</li>
-      </ul>
     </p>
+    <ul>
+      <li>vision - this includes people with sight impairments and colour blind people</li>
+      <li>hearing - like people who are deaf or hard of hearing</li>
+      <li>motor - like those who find it difficult to use a mouse or keyboard</li>
+      <li>cognitive - like people with dyslexia, autism or learning difficulties</li>
+    </ul>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="34" text=slideText %}
 
@@ -398,7 +596,11 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
   {% include dsl-accessibility-slide.html slide="35" text=slideText %}
 
   {% capture slideText %}
-    <p>There are many different automated tools but I’ve personally found that aXe works really well for a lot of use cases, and it’s what we use on the Design System</p>
+    <p>
+      There are many different automated tools but I’ve personally found that
+      {% include footnote-link.html id="axe" text="aXe" %}
+      works really well for a lot of use cases, and it’s what we use on the Design System
+    </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="36" text=slideText %}
 
@@ -425,17 +627,19 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
 
   {% capture slideText %}
     <p>The accessibility team at GDS, built the least accessible webpage in the world, and tested as many automated tools on it as a possible.</p>
-    <p>They found that tools like axe can only pick up around 30% of issues.</p>
+    <p>
+      {% include footnote-link.html id="automated-tool-audit" text="They found that tools like axe can only pick up around 30% of issues" %}
+    </p>
     <p>The other 70% needs to be done with manual testing.</p>
-    <p>https://accessibility.blog.gov.uk/2017/02/24/what-we-found-when-we-tested-tools-on-the-worlds-least-accessible-webpage/
-    https://alphagov.github.io/accessibility-tool-audit/</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="41" text=slideText %}
 
   {% capture slideText %}
-    <p>One example of manual testing is the work we do to make sure GOV.UK works when users change their colours.</p>
+    <p>
+      One example of manual testing is the work we do to make sure
+      {% include footnote-link.html id="users-who-change-colours" text="GOV.UK works when users change their colours" %}.
+    </p>
     <p>While high contrast is normally associated with good accessibility, for some users it can cause visual stress that means they prefer to customise the colours they use to read your website.</p>
-    <p>https://accessibility.blog.gov.uk/2018/08/01/supporting-users-who-change-colours-on-gov-uk/</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="42" text=slideText %}
 
@@ -444,13 +648,15 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
     <p>And the first radio input is focused.</p>
     <p>Since our radio inputs are custom elements for improved usability, we have to do extra to make sure the custom focus is not lost when users change their colours.</p>
     <p>So in the second example, there is a separate outline, that represents this focused input so that it’s clear what is being interacted with.</p>
-    <p>https://accessibility.blog.gov.uk/2018/08/01/supporting-users-who-change-colours-on-gov-uk/</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="43" text=slideText %}
 
   {% capture slideText %}
-    <p>One other thing you might consider is to get an external accessibility audit, this can be really useful to get an expert’s insight into what you’re building.</p>
-    <p>https://www.gov.uk/service-manual/technology/testing-for-accessibility#getting-an-accessibility-audit</p>
+    <p>
+      One other thing you might consider is to get an
+      {% include footnote-link.html id="external-audit" text="external accessibility audit" %},
+      this can be really useful to get an expert’s insight into what you’re building.
+    </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="44" text=slideText %}
 
@@ -463,24 +669,27 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
     <p>Assistive technologies help people to overcome environments that exclude them based on certain disabilities or impairments.</p>
     <p>Common assistive technologies include mobility aids such as wheelchairs or crutches.</p>
     <p>On the web we have some less known assistive technologies, which are equally as important.</p>
-    <p>https://www.gov.uk/government/publications/assistive-technology-definition-and-safe-use/assistive-technology-definition-and-safe-use</p>
-    <p>https://www.gov.uk/service-manual/helping-people-to-use-your-service/making-your-service-accessible-an-introduction</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="46" text=slideText %}
 
   {% capture slideText %}
-    <p>We test in the most commonly used assistive technologies.</p>
+    <p>
+      We test in the
+      {% include footnote-link.html id="assistive-technologies-to-test" text="most commonly used assistive technologies" %}.
+    </p>
     <p>JAWS, NVDA, and VoiceOver are all examples of screen readers.</p>
     <p>Screenreaders can read out a webpage and are often used by people with sight impairments. However, they’re also used by people who have trouble reading english, for example people with severe dyslexia.</p>
     <p>Often people with disabilities use multiple assistive technologies, which intersect with each other.</p>
     <p>ZoomText is used to zoom pages often to over 400% their original size.</p>
     <p>And finally Dragon NaturallySpeaking is used by some users that have mobility issues which allows a user to dictate commands with their voice.</p>
-    <p>https://www.gov.uk/service-manual/technology/testing-with-assistive-technologies#what-to-test</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="47" text=slideText %}
 
   {% capture slideText %}
-    <p>Has anyone seen bladerunner? With the scene where Deckard is zooming an image with his voice?</p>
+    <p>
+      Has anyone seen bladerunner?
+      {% include footnote-link.html id="bladerunner" text="With the scene where Deckard is zooming an image with his voice?" %}
+    </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="48" text=slideText %}
 
@@ -505,16 +714,22 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
   {% include dsl-accessibility-slide.html slide="52" text=slideText %}
 
   {% capture slideText %}
-    <p>We have put all these assistive technologies into what is called the Accessibility Empathy Lab, so that these are easy to pick and test.</p>
+    <p>
+      We have put all these assistive technologies into what is called the  
+      {% include footnote-link.html id="empathy-lab" text="Accessibility Empathy Lab" %},
+      so that these are easy to pick and test.
+    </p>
+
     <p>https://gds.blog.gov.uk/2018/06/20/creating-the-uk-governments-accessibility-empathy-lab/</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="53" text=slideText %}
 
   {% capture slideText %}
     <p>Some of these tools are Windows only and cost money</p>
-    <p>If you want to start,</p>
-    <p>Anika from the Accessibility Team has written a blog post on tools you can use at no cost</p>
-    <p>https://accessibility.blog.gov.uk/2018/09/27/assistive-technology-tools-you-can-use-at-no-cost/</p>
+    <p>
+      If you want to start, Anika from the Accessibility Team has written a
+      {% include footnote-link.html id="no-cost-testing" text="blog post on tools you can use at no cost" %}.
+    </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="54" text=slideText %}
 
@@ -528,8 +743,8 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
     <p>One frequent example of this is assistive technology mispronouncing content.</p>
     <p>For example, We had one case where GOV.UK was being pronounced ‘governer’</p>
     <p>Through our Accessibility community, we often get asked about how to create content that works well with screen readers.</p>
-    <p>“[...] don't write content that works specifically for screen readers, write content that works well for everyone.”
-      https://accessibility.blog.gov.uk/2017/02/08/advice-for-creating-content-that-works-well-with-screen-readers/
+    <p>
+      "{% include footnote-link.html id="content-for-everyone" text="[...] don't write content that works specifically for screen readers, write content that works well for everyone" %}".
     </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="56" text=slideText %}
@@ -537,7 +752,7 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
   {% capture slideText %}
     <p>I think this quote from Robin is worth sharing where they say.</p>
     <p>Designing programs to build compassion/understanding for disabled people in the total absence of consultation with disabled people is very silly.</p>
-    <p>https://twitter.com/robinmarceline/status/1039321725756891136</p>
+    <p></p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="57" text=slideText %}
 
@@ -559,11 +774,12 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
   {% capture slideText %}
     <p>Doing research with users can be expensive, so we don’t want to do a full round of testing for one addition to the design system.</p>
     <p>In the past, we have tried testing components on their own, but it puts users in an unrealistic scenario.</p>
-    <p>One way we’ve tried to get around this is to put multiple additions together and test them in a fake service.</p>
+    <p>
+      One way we’ve tried to get around this is to put
+      {% include footnote-link.html id="fake-service" text="
+      multiple additions together and test them in a fake service" %}.
+    </p>
     <p>This was really successful but is time consuming to put together.</p>
-    <p>https://www.youtube.com/watch?v=wprWuTvhec4</p>
-    <p>https://accessibility.blog.gov.uk/2018/05/15/what-we-learned-from-getting-our-autocomplete-tested-for-accessibility/</p>
-    <p>https://github.com/alphagov/govuk-design-system/wiki/Character-count-testing-and-user-research</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="61" text=slideText %}
 
@@ -589,20 +805,20 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
   {% include dsl-accessibility-slide.html slide="65" text=slideText %}
 
   {% capture slideText %}
-    <p>One thing we’ve noticed is that a design system can mislead some people into thinking they dont need to test their service.</p>
-    <p>The quote on screen I actually made up because the real one was not grammatically correct, so this is a bit cheeky but we have consistently seen this in research.</p>
-    <p>"Once we have the first prototype, my starting point is the GOV.UK prototype kit, I trust that I know it's been built with accessibility in mind." Senior designer</p>
-    <p>"If we were building prototypes from scratch we’d have to look at every screen, but the prototype kit has already considered it, things like don’t have drop down boxes, we have radio buttons, the things that would make a service not accessible, the work has already been done by GDS so we don’t have to keep doing it."  Senior Product Manager</p>
-    <p>"Having the prototyping kit now means that it is accessible," Senior Product Manager</p>
-    <p>"Things like design patterns, 80% has already been done and tested by GDS or other services." UX designer</p>
-    <p>Thanks to Katie John and Bekki Leaver (GDS User Researchers) for these quotes</p>
+    <p>
+      One thing we’ve noticed is that a design system
+      {% include footnote-link.html id="senior-product-manager-quote" text="can mislead some people" %}
+      into thinking they don't need to test their service.
+    </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="66" text=slideText %}
 
   {% capture slideText %}
-    <p>Cathy Dutton wrote about this in her article ‘Problem with patterns’, where she says:</p>
-    <p>Because patterns are built for reuse, they sometimes encourage us to use them without much question [...]</p>
-    <p>https://alistapart.com/article/problem-with-patterns</p>
+    <p>
+      Cathy Dutton wrote about this in her article
+      {% include footnote-link.html id="problem-with-patterns" text="‘Problem with patterns’" %}, where she says:
+    </p>
+    <p>"Because patterns are built for reuse, they sometimes encourage us to use them without much question [...]"</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="67" text=slideText %}
 
@@ -613,9 +829,10 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
   {% include dsl-accessibility-slide.html slide="68" text=slideText %}
 
   {% capture slideText %}
-    <p>(paul smith) design systems are a starting point.</p>
+    <p>Design systems are a
+    {% include footnote-link.html id="problem-with-patterns" count="2" text="starting point" %}
+    </p>
     <p>Everything I’ve covered here ideally should also be done by the service teams we support.</p>
-    <p>https://medium.com/@paulmsmith/design-systems-the-means-not-the-end-fc840c21b51e</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="69" text=slideText %}
   {% capture slideText %}
@@ -625,9 +842,8 @@ I've put together some of the tweets in a [Twitter moment, if you're into that](
 
   {% capture slideText %}
     <p>When building design systems we have a lot of responsibility, we can make inaccessible patterns wide spread or take the opportunity to make all our services more accessible by default.</p>
-    <p>But if you’re starting out, don’t worry about being perfect, as Leonie Watson says: “Do just one thing to make it a little better than yesterday”</p>
-    <p>“you’re not going to get it right all the time. We never do, this is the web for one thing. [...] If we could do just one thing to make it a little bit better than yesterday then we can call that a win. “ - Léonie Watson</p>
-    <p>https://www.youtube.com/watch?v=spxT2CmHoPk</p>
+    <p>But if you’re starting out, don’t worry about being perfect, as Leonie Watson says: “{% include footnote-link.html id="leonie-watson" text="Do just one thing to make it a little better than yesterday" %}”
+    </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="71" text=slideText %}
 

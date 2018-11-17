@@ -80,7 +80,7 @@ footnotes:
 
 I was invited to speak at <a href="https://www.designsystemslondon.com/">Design Systems London</a>, these are the slides with my speakers notes.
 
-[insert twitter moment here]
+I've put together some of the tweets in a [Twitter moment, if you're into that](https://twitter.com/i/moments/1063848031613845504).
 
 <figure>
   <img src="/assets/img/dsl-accessibility-talk.jpg" alt="Nick stood in front of a slide using Star Wars to explain accessibility legislation">

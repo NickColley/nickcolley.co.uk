@@ -22,7 +22,7 @@ footnotes:
   - id: revolution-not-evolution
     text: |
       In <a href="https://twitter.com/Marthalanefox">Martha Lane Fox</a>'s report
-      <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/60993/Martha_20Lane_20Fox_s_20letter_20to_20Francis_20Maude_2014th_20Oct_202010.pdf">"Revolution not Evolution"</a>
+      <a href="https://www.gov.uk/government/publications/directgov-2010-and-beyond-revolution-not-evolution-a-report-by-martha-lane-fox">"Revolution not Evolution"</a>
       <br/>
       "NolO feel it is preferable to go from 750 top level website domains (eg www.cabinetoffice.gov.uk) to a single top level website domain for all of central government."
       <br/>
@@ -211,8 +211,8 @@ footnotes:
       <ul>
         <li>“[...] the things that would make a service not accessible, the work has already been done by GDS so we don’t have to keep doing it.”</li>
         <li>"Once we have the first prototype, my starting point is the GOV.UK prototype kit, I trust that I know it's been built with accessibility in mind."</li>
-        <li>"Having the prototyping kit now means that it is accessible," Senior Product Manager</li>
-        <li>"Things like design patterns, 80% has already been done and tested by GDS or other services." UX designer</li>
+        <li>"Having the prototyping kit now means that it is accessible"</li>
+        <li>"Things like design patterns, 80% has already been done and tested by GDS or other services."</li>
       </ul>
       <br>
       Thanks to Katie John and Bekki Leaver (GDS User Researchers) for these quotes.
@@ -244,15 +244,35 @@ footnotes:
       </a>
 ---
 
-<style>
-  .slides img {
-    width: 30%;
-    min-width: 386px;
+<style media="screen">
+  .slides-thumbnail {
+    display: block;
+    height: 192.5px;
+    width: 342px;
+    max-width: 100%;
     border: 3px solid #9E9E9E;
+    margin-bottom: 1rem;
+  }
+
+  @media (max-width: 350px) {
+    .slides-thumbnail {
+      width: 100%;
+      height: 160px;
+    }
+  }
+
+  .slides-thumbnail:focus {
+    outline: 3px solid blue;
+    outline-offset: 0;
+  }
+
+  .slides-thumbnail img {
+    height: 100%;
+    width: 100%;
   }
 
   @media (min-width: 50rem) {
-    .slides img {
+    .slides-thumbnail {
       float: right;
       margin-left: 1rem;
     }
@@ -264,27 +284,28 @@ footnotes:
     }
 
     .slides figcaption {
-      font-size: .8rem;
+      font-size: .9rem;
     }
+  }
+
+  .slides figure {
+    margin-bottom: 3rem;
   }
 
   .slides figcaption > :first-child::before,
   .slides figcaption > :last-child::after {
     position: relative;
     top: .5rem;
-    display: inline-block;
     font-size: 2em;
     line-height: 0;
   }
 
   .slides figcaption > :first-child::before {
     content: '“';
-    margin-right: .1em;
   }
 
   .slides figcaption > :last-child::after {
     content: '”';
-    margin-left: .1em;
   }
 
   .slides figcaption p {
@@ -294,20 +315,6 @@ footnotes:
   .slides figcaption ul:last-child,
   .slides figcaption p:last-child {
     margin-bottom: 0;
-  }
-
-  .visually-hidden {
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    margin: -1px !important;
-    padding: 0 !important;
-    overflow: hidden !important;
-    clip: rect(0 0 0 0) !important;
-    -webkit-clip-path: inset(50%) !important;
-    clip-path: inset(50%) !important;
-    border: 0 !important;
-    white-space: nowrap !important
   }
 </style>
 
@@ -345,18 +352,18 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   {% include dsl-accessibility-slide.html slide="03" text=slideText %}
 
   {% capture slideText %}
-    <p>{% include footnote-link.html id="tax-your-vehicle" text="Tax your vehicle" %}</p>
+    <p>{% include footnote-link.html id="tax-your-vehicle" text="tax your vehicle" -%}</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="04" text=slideText %}
 
   {% capture slideText %}
-    <p>{% include footnote-link.html id="micropig" text="To check guidance on keeping a micropig." %}</p>
+    <p>{% include footnote-link.html id="micropig" text="to check guidance on keeping a micropig." -%}</p>
     <p>You're basically a farmer if you keep a micropig, you might need a license to walk it.</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="05" text=slideText %}
 
   {% capture slideText %}
-    <p>{% include footnote-link.html id="register-to-vote" text="Or hopefully to register to vote" %}</p>
+    <p>{% include footnote-link.html id="register-to-vote" text="or hopefully to register to vote" -%}</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="06" text=slideText %}
 
@@ -367,17 +374,17 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
 
   {% capture slideText %}
     <p>
-      {% include footnote-link.html id="before-govuk" text="Before GOV.UK" %},
+      {% include footnote-link.html id="before-govuk" text="Before GOV.UK" -%},
       there were a ton of differents websites that looked and behaved differently but fundamentally served a similar purpose.
     </p>
-    <p>From the users’ point of view there’s no need for them to be different.</p>
+    <p>From the user’s point of view there’s no need for them to be different.</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="08" text=slideText %}
 
   {% capture slideText %}
     <p>
       We needed to go from
-      {% include footnote-link.html id="revolution-not-evolution" text="750 websites domains to one top level domain" %}.
+      {% include footnote-link.html id="revolution-not-evolution" text="750 websites domains to one top level domain." -%}
     </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="09" text=slideText %}
@@ -386,10 +393,10 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
     <p>While this has taken time, most content is now in one place with a consistent user experience and brand.</p>
     <p>
       We know have more than
-      {% include footnote-link.html id="300k-content" text="300 thousand pieces of content" %}
+      {% include footnote-link.html id="300k-content" text="300 thousand pieces of content" -%}
       from across government published and
       GOV.UK now has
-      {% include footnote-link.html id="visits-a-month" text="more visits in a single month than there are people in the UK" %}.
+      {% include footnote-link.html id="visits-a-month" text="more visits in a single month than there are people in the UK." -%}
     </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="10" text=slideText %}
@@ -402,8 +409,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   {% capture slideText %}
     <p>
       There are currently
-      {% include footnote-link.html id="govuk-services" text="780 services that account for over a billion transactions a year" %}.
-    </p>
+      {% include footnote-link.html id="govuk-services" text="780 services that account for over a billion transactions a year." -%}</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="12" text=slideText %}
 
@@ -427,7 +433,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   {% capture slideText %}
     <p>
       For example, a business wanting to hire their first employee needs
-      {% include footnote-link.html id="step-by-step" text="information and services from 5 different areas of government" %}.
+      {% include footnote-link.html id="step-by-step" text="information and services from 5 different areas of government." -%}
       before they can hire them.
     </p>
   {% endcapture %}
@@ -441,7 +447,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   {% capture slideText %}
     <p>
       The user could
-      {% include footnote-link.html id="start-pages-pattern" text="start on a content page," %}
+      {% include footnote-link.html id="start-pages-pattern" text="start on a content page," -%}
       which is run by GDS, then they could go through any number of departments running services.
     </p>
   {% endcapture %}
@@ -454,7 +460,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
 
   {% capture slideText %}
     <p>
-    {% include footnote-link.html id="revolution-not-evolution" count="2" text="Users should not have to understand how government works" %}.
+    {% include footnote-link.html id="revolution-not-evolution" count="2" text="Users should not have to understand how government works." -%}
     </p>
     <p>So how do you create a consistent experience for both content and services with distributed teams?</p>
   {% endcapture %}
@@ -462,7 +468,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
 
   {% capture slideText %}
     <p>This where the
-    {% include footnote-link.html id="govuk-design-system" text="GOV.UK Design System" %}
+    {% include footnote-link.html id="govuk-design-system" text="GOV.UK Design System" -%}
     comes in, it’s built from years of research and work from teams across government.</p>
     <p>There were already volunteer led projects that laid the foundation but this is the first time we’ve had a dedicated team to work on this problem.</p>
     <p>The GOV.UK Design System brings together styles, components and patterns.</p>
@@ -493,7 +499,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
 
   {% capture slideText %}
     <p>
-      {% include footnote-link.html id="disability-facts-and-figures" text="20% of people in the UK have a disability" %}
+      {% include footnote-link.html id="disability-facts-and-figures" text="20% of people in the UK have a disability" -%}
     </p>
     <p>this could be a visual, hearing, motor or cognitive (affecting memory and thinking) impairment</p>
   {% endcapture %}
@@ -502,7 +508,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   {% capture slideText %}
     <p>But if we think about accessibility in terms of exclusion and inclusion, we can think about people’s experience as a spectrum, which includes even more people.</p>
     <p>The example I’m showing today is from
-    {% include footnote-link.html id="microsoft-inclusive-design" text="Microsoft’s Inclusive design toolkit" %}.
+    {% include footnote-link.html id="microsoft-inclusive-design" text="Microsoft’s Inclusive design toolkit." -%}
     </p>
     <p>It shows how motor based impairments can impact anyone.</p>
     <p>Someone who has lost motor function in one arm might operating a keyboard to be difficult.</p>
@@ -516,7 +522,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   {% capture slideText %}
     <p>One example of this I wanted to share with you is about subtitles, otherwise known as closed captions.</p>
     <p>
-      {% include footnote-link.html id="subtitle-viewers" text="Ofcom did a study" %}
+      {% include footnote-link.html id="subtitle-viewers" text="Ofcom did a study" -%}
       which found that 80% of television viewers use subtitles for reasons other than hearing impairments.
     </p>
     <p>We can see this too in social media, where often videos will autoplay without sound and include subtitles which is useful in situations where you’re on the go and can’t listen to a video.</p>
@@ -527,7 +533,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
     <p>Raise your hand if you work in the public sector, or with charities.</p>
     <p>Cool, this slide is for you 😊</p>
     <p>In the public sector, there are also
-    {% include footnote-link.html id="regulations" text="two regulations worth knowing" %}
+    {% include footnote-link.html id="regulations" text="two regulations worth knowing" -%}
     </p>
     <p>The Equality Act 2010 legally protects people from discrimination in the workplace and in wider society.</p>
     <p>But more recently there has been the introduction of an EU directive which is more specific to web and mobile applications, so can be enforced easier.</p>
@@ -550,7 +556,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   {% capture slideText %}
     <p>
       To meet       
-      {% include footnote-link.html id="government-accessibility-requirements" text="government accessibility requirements" %}
+      {% include footnote-link.html id="government-accessibility-requirements" text="government accessibility requirements" -%}
       , digital services must:
     </p>
 
@@ -570,7 +576,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   {% capture slideText %}
     <p>
       If you’ve not heard of
-      {% include footnote-link.html id="wcag" text="WCAG (Web Content Accessibility Guidlines)" %}
+      {% include footnote-link.html id="wcag" text="WCAG (Web Content Accessibility Guidlines)" -%}
       before you can think of it like a standardized accessibility design manual.
     </p>
     <p>They are an internationally recognised set of recommendations for improving web accessibility.</p>
@@ -599,7 +605,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   {% capture slideText %}
     <p>
       There are many different automated tools but I’ve personally found that
-      {% include footnote-link.html id="axe" text="aXe" %}
+      {% include footnote-link.html id="axe" text="aXe" -%}
       works really well for a lot of use cases, and it’s what we use on the Design System
     </p>
   {% endcapture %}
@@ -629,7 +635,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   {% capture slideText %}
     <p>The accessibility team at GDS, built the least accessible webpage in the world, and tested as many automated tools on it as a possible.</p>
     <p>
-      {% include footnote-link.html id="automated-tool-audit" text="They found that tools like axe can only pick up around 30% of issues" %}
+      {% include footnote-link.html id="automated-tool-audit" text="They found that tools like axe can only pick up around 30% of issues" -%}
     </p>
     <p>The other 70% needs to be done with manual testing.</p>
   {% endcapture %}
@@ -638,7 +644,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   {% capture slideText %}
     <p>
       One example of manual testing is the work we do to make sure
-      {% include footnote-link.html id="users-who-change-colours" text="GOV.UK works when users change their colours" %}.
+      {% include footnote-link.html id="users-who-change-colours" text="GOV.UK works when users change their colours." -%}
     </p>
     <p>While high contrast is normally associated with good accessibility, for some users it can cause visual stress that means they prefer to customise the colours they use to read your website.</p>
   {% endcapture %}
@@ -655,7 +661,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   {% capture slideText %}
     <p>
       One other thing you might consider is to get an
-      {% include footnote-link.html id="external-audit" text="external accessibility audit" %},
+      {% include footnote-link.html id="external-audit" text="external accessibility audit" -%},
       this can be really useful to get an expert’s insight into what you’re building.
     </p>
   {% endcapture %}
@@ -676,10 +682,10 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   {% capture slideText %}
     <p>
       We test in the
-      {% include footnote-link.html id="assistive-technologies-to-test" text="most commonly used assistive technologies" %}.
+      {% include footnote-link.html id="assistive-technologies-to-test" text="most commonly used assistive technologies." -%}
     </p>
     <p>JAWS, NVDA, and VoiceOver are all examples of screen readers.</p>
-    <p>Screenreaders can read out a webpage and are often used by people with sight impairments. However, they’re also used by people who have trouble reading english, for example people with severe dyslexia.</p>
+    <p>Screenreaders can read out a webpage and are often used by people with sight impairments. However, they’re also used by people who have trouble reading english or people with dyslexia.</p>
     <p>Often people with disabilities use multiple assistive technologies, which intersect with each other.</p>
     <p>ZoomText is used to zoom pages often to over 400% their original size.</p>
     <p>And finally Dragon NaturallySpeaking is used by some users that have mobility issues which allows a user to dictate commands with their voice.</p>
@@ -689,7 +695,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   {% capture slideText %}
     <p>
       Has anyone seen bladerunner?
-      {% include footnote-link.html id="bladerunner" text="With the scene where Deckard is zooming an image with his voice?" %}
+      {% include footnote-link.html id="bladerunner" text="With the scene where Deckard is zooming an image with his voice?" -%}
     </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="48" text=slideText %}
@@ -717,19 +723,17 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   {% capture slideText %}
     <p>
       We have put all these assistive technologies into what is called the  
-      {% include footnote-link.html id="empathy-lab" text="Accessibility Empathy Lab" %},
+      {% include footnote-link.html id="empathy-lab" text="Accessibility Empathy Lab" -%},
       so that these are easy to pick and test.
     </p>
-
-    <p>https://gds.blog.gov.uk/2018/06/20/creating-the-uk-governments-accessibility-empathy-lab/</p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="53" text=slideText %}
 
   {% capture slideText %}
-    <p>Some of these tools are Windows only and cost money</p>
+    <p>Some of these tools are Windows only and cost money.</p>
     <p>
       If you want to start, Anika from the Accessibility Team has written a
-      {% include footnote-link.html id="no-cost-testing" text="blog post on tools you can use at no cost" %}.
+      {% include footnote-link.html id="no-cost-testing" text="blog post on tools you can use at no cost." -%}
     </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="54" text=slideText %}
@@ -745,15 +749,16 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
     <p>For example, We had one case where GOV.UK was being pronounced ‘governer’</p>
     <p>Through our Accessibility community, we often get asked about how to create content that works well with screen readers.</p>
     <p>
-      "{% include footnote-link.html id="content-for-everyone" text="[...] don't write content that works specifically for screen readers, write content that works well for everyone" %}".
+      "{% include footnote-link.html id="content-for-everyone" text="[...] don't write content that works specifically for screen readers, write content that works well for everyone" -%}".
     </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="56" text=slideText %}
 
   {% capture slideText %}
-    <p>I think this quote from Robin is worth sharing where they say.</p>
-    <p>Designing programs to build compassion/understanding for disabled people in the total absence of consultation with disabled people is very silly.</p>
-    <p></p>
+    <p>I think this quote from Robin is worth sharing where they say:</p>
+    <p>
+      "{% include footnote-link.html id="designing-empathy-programs" text="Designing programs to build compassion/understanding for disabled people in the total absence of consultation with disabled people is very silly." -%}".
+    </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="57" text=slideText %}
 
@@ -777,8 +782,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
     <p>In the past, we have tried testing components on their own, but it puts users in an unrealistic scenario.</p>
     <p>
       One way we’ve tried to get around this is to put
-      {% include footnote-link.html id="fake-service" text="
-      multiple additions together and test them in a fake service" %}.
+      {% include footnote-link.html id="fake-service" text="multiple additions together and test them in a fake service." -%}
     </p>
     <p>This was really successful but is time consuming to put together.</p>
   {% endcapture %}
@@ -808,7 +812,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   {% capture slideText %}
     <p>
       One thing we’ve noticed is that a design system
-      {% include footnote-link.html id="senior-product-manager-quote" text="can mislead some people" %}
+      {% include footnote-link.html id="senior-product-manager-quote" text="can mislead some people" -%}
       into thinking they don't need to test their service.
     </p>
   {% endcapture %}
@@ -817,7 +821,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   {% capture slideText %}
     <p>
       Cathy Dutton wrote about this in her article
-      {% include footnote-link.html id="problem-with-patterns" text="‘Problem with patterns’" %}, where she says:
+      {% include footnote-link.html id="problem-with-patterns" text="‘Problem with patterns’" %}, where she sa-ys:
     </p>
     <p>"Because patterns are built for reuse, they sometimes encourage us to use them without much question [...]"</p>
   {% endcapture %}
@@ -831,7 +835,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
 
   {% capture slideText %}
     <p>Design systems are a
-    {% include footnote-link.html id="problem-with-patterns" count="2" text="starting point" %}
+    {% include footnote-link.html id="problem-with-patterns" count="2" text="starting point" -%}
     </p>
     <p>Everything I’ve covered here ideally should also be done by the service teams we support.</p>
   {% endcapture %}
@@ -843,7 +847,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
 
   {% capture slideText %}
     <p>When building design systems we have a lot of responsibility, we can make inaccessible patterns wide spread or take the opportunity to make all our services more accessible by default.</p>
-    <p>But if you’re starting out, don’t worry about being perfect, as Leonie Watson says: “{% include footnote-link.html id="leonie-watson" text="Do just one thing to make it a little better than yesterday" %}”
+    <p>But if you’re starting out, don’t worry about being perfect, as Leonie Watson says: “{% include footnote-link.html id="leonie-watson" text="Do just one thing to make it a little better than yesterday" -%}”
     </p>
   {% endcapture %}
   {% include dsl-accessibility-slide.html slide="71" text=slideText %}

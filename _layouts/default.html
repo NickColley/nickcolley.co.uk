@@ -211,6 +211,47 @@
         display: table;
         clear: both;
       }
+
+      .footnotes {
+        font-size: .8rem;
+      }
+
+      .footnotes h2 {
+        font-size: 1rem;
+      }
+
+      .footnotes ul {
+        margin-bottom: 0;
+      }
+
+      .footnotes > ol > li {
+        margin-bottom: .5rem;
+      }
+
+      .footnotes :target {
+        outline: 2px dashed blue;
+        outline-offset: 2px;
+      }
+
+      .footnotes-back-link {
+        font-size: 0.8em;
+        font-weight: bold;
+      }
+
+
+      .visually-hidden {
+        position: absolute !important;
+        width: 1px !important;
+        height: 1px !important;
+        margin: -1px !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        clip: rect(0 0 0 0) !important;
+        -webkit-clip-path: inset(50%) !important;
+        clip-path: inset(50%) !important;
+        border: 0 !important;
+        white-space: nowrap !important
+      }
     </style>
   </head>
   <body>

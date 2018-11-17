@@ -3,7 +3,7 @@
 {% assign currentImages = images | where_exp: "item", "item.basename contains include.slide" %}
 {% assign currentOptimisedImages = optimisedImages | where_exp: "item", "item.basename contains include.slide" %}
 <figure>
-  <a href="{{ currentImages[0].path }}">
+  <a class="slides-thumbnail" href="{{ currentImages[0].path }}">
     <img src="{{ currentOptimisedImages[0].path }}" alt="">
     <span class="visually-hidden">Open full size image for slide {{ include.slide }}</span>
   </a>

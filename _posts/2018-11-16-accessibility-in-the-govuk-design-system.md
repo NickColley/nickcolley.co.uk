@@ -821,7 +821,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   {% capture slideText %}
     <p>
       Cathy Dutton wrote about this in her article
-      {% include footnote-link.html id="problem-with-patterns" text="‘Problem with patterns’" %}, where she sa-ys:
+      {% include footnote-link.html id="problem-with-patterns" text="‘Problem with patterns’" %}, where she says:
     </p>
     <p>"Because patterns are built for reuse, they sometimes encourage us to use them without much question [...]"</p>
   {% endcapture %}

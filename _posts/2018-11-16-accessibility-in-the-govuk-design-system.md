@@ -24,7 +24,7 @@ footnotes:
       In <a href="https://twitter.com/Marthalanefox">Martha Lane Fox</a>'s report
       <a href="https://www.gov.uk/government/publications/directgov-2010-and-beyond-revolution-not-evolution-a-report-by-martha-lane-fox">"Revolution not Evolution"</a>
       <br/>
-      "NolO feel it is preferable to go from 750 top level website domains (eg www.cabinetoffice.gov.uk) to a single top level website domain for all of central government."
+      "Number 10 feel it is preferable to go from 750 top level website domains (eg www.cabinetoffice.gov.uk) to a single top level website domain for all of central government."
       <br/>
       "The user should not have to navigate the departmental structure of Government before finding the service or content what they need."
     count: 2
@@ -392,7 +392,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   {% capture slideText %}
     <p>While this has taken time, most content is now in one place with a consistent user experience and brand.</p>
     <p>
-      We know have more than
+      We now have more than
       {% include footnote-link.html id="300k-content" text="300 thousand pieces of content" -%}
       from across government published and
       GOV.UK now has

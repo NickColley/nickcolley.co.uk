@@ -327,8 +327,9 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
 <figure>
   <img src="/assets/img/dsl-accessibility-talk.jpg" alt="Nick stood in front of a slide using Star Wars to explain accessibility legislation">
   <figcaption>
-    <a href="https://youtu.be/Z7vapa6p92k?t=18736">Design Systems London live stream recap</a>
-    (note: there are no subtitles yet)
+    <a href="https://youtu.be/OeyMEDPnPcE">
+      YouTube: Design Systems London (note: there are no subtitles)
+    </a>
   </figcaption>
 </figure>
 

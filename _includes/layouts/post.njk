@@ -1,19 +1,19 @@
 ---
-layout: default
+layout: layouts/default.njk
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
     <p class="sub-heading post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: "%B %-d, %Y" | downcase }}
+      <time datetime="{{ page.date | dateISO }}" itemprop="datePublished">
+        {{ page.date | date("MMMM	d, yyyy") }}
       </time>
     </p>
-    <h1 class="heading post-heading" itemprop="name headline">{{ page.title | escape }}</h1>
+    <h1 class="heading post-heading" itemprop="name headline">{{ title }}</h1>
   </header>
   <div class="post-content" itemprop="articleBody">
-    {{ content }}
+    {{ content | safe }}
   </div>
-  {% include footnotes.html %}
+  {% include "footnotes.njk" %}
   <hr>
   <p class="clearfix">
     <a class="pull-left" href="/">more posts</a>

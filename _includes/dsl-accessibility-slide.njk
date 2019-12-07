@@ -1,0 +1,10 @@
+{%- macro slide(slide, text) -%}
+<figure>
+  <a class="slides-thumbnail" href="{% slideImagePath slide %}">
+    <img src="{% slideImagePath slide, optimised=true %}" alt="" loading="lazy">
+    <span class="visually-hidden">Open full size image for slide {{ slide }}</span>
+  </a>
+  <figcaption>{{ text | safe }}</figcaption>
+  <br>
+</figure>
+{%- endmacro -%}

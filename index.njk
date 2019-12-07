@@ -64,7 +64,7 @@ layout: layouts/default.njk
   <ul class="post-list">
     {% for post in collections.post | reverse %}
       <li class="post-list-item">
-        <small class="post-meta">{{ post.data.date | date("MMMM	d, yyyy") }}</small>
+        <small class="post-meta">{{ post.data.date | date("MMMM d, yyyy") }}</small>
 
         <h3 class="post-list-heading">
           <a class="post-link" href="{{ post.data.redirectUrl if post.data.redirectUrl else post.url }}">

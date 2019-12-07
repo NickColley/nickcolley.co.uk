@@ -1,7 +1,8 @@
 ---
-layout: post
-title:  "rewriting browser  history – when to use pushState() versus replaceState()"
-date:   2018-06-11 00:36:29 +0100
+layout: layouts/post.njk
+title:  Rewriting browser history – when to use pushState() versus replaceState()
+date:   2018-06-11
+tags:   post
 ---
 
 Your browser creates history entries when you navigate around the web.

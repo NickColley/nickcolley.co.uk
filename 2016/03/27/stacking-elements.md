@@ -1,7 +1,8 @@
 ---
-layout: post
-title:  "stacking inline elements"
-date:   2016-03-27 21:51:04 +0100
+layout: layouts/post.njk
+title:  Stacking inline elements
+date:   2016-03-27
+tags:   post
 ---
 
 <style>
@@ -124,7 +125,7 @@ I want all my buttons to have a margin to the right apart from the last one.
 </div>
 </div>
 
-{% highlight css %}
+```css
 .btn {
   margin-right: 1em;
 }
@@ -132,7 +133,7 @@ I want all my buttons to have a margin to the right apart from the last one.
 .btn:last-child {
   margin-right: 0;
 }
-{% endhighlight %}
+```
 
 
 ## ‘conditional’ approach
@@ -166,11 +167,11 @@ This works for the equal spacing however when collapsed there's unwanted left-mo
 </div>
 </div>
 
-{% highlight css %}
+```css
 .btn + .btn {
   margin-left: 1em;
 }
-{% endhighlight %}
+```
 
 ## ‘negative-margin’ approach
 
@@ -205,7 +206,7 @@ as it'll bleed over your container width.
 </div>
 </div>
 
-{% highlight css %}
+```css
 .btn-group {
   margin-left: -.5em;
   margin-right: -.5em;
@@ -215,7 +216,7 @@ as it'll bleed over your container width.
   margin-left: .5em;
   margin-right: .5em;
 }
-{% endhighlight %}
+```
 
 End result works well, this is actually how Bootstrap's grid system works
 for example.

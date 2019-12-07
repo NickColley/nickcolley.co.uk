@@ -1,0 +1,3 @@
+{%- macro footnoteLink(id, count, text) -%}
+<a href="#{{ id }}" aria-describedby="footnote-label" id="{{ id }}{{ count }}-ref">{{ text }}</a>
+{%- endmacro -%}

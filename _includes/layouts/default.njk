@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title | default: 'home' }} – nick colley</title>
+    <title>{{ title }} – Nick Colley</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style media="screen">
       *, *:after, *:before {
         box-sizing: inherit;
       }
 
-      *:focus {
-        outline: 2px solid blue;
+      :focus {
+        outline: 2px dotted;
         outline-offset: 2px;
       }
 
@@ -67,10 +67,17 @@
         margin-top: 0;
       }
 
+      /* Force relative sizing to work properly, with a hack */
+      pre,
+      code {
+        font-family: monospace, monospace;
+        font-size: 1em;
+      }
+
       pre {
         overflow-y: auto;
         margin-top: 0;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         padding: 1rem;
         background-color: aliceblue;
         color: #444;
@@ -100,14 +107,8 @@
         background: aliceblue;
       }
 
-      .code-class { color: blue; }
-      .code-prop { color: #222; }
-      .code-val { color: blue; }
-
-      .highlight .language-css .nc { color: blue }
-      .highlight .language-css .nl { color: #222; }
-      .highlight .language-css .m { color: blue; }
-
+      .language-css .token.selector { color: blue }
+    
       .heading {
         font-size: 2.15rem;
         margin-bottom: 2.5rem;
@@ -261,7 +262,7 @@
   <body>
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        {{ content }}
+        {{ content | safe }}
       </div>
     </main>
   </body>

@@ -1,12 +1,12 @@
-{% if page.footnotes %}
+{% if footnotes %}
   <hr>
   <div class="footnotes" id="footnotes">
     <!-- https://www.sitepoint.com/accessible-footnotes-css -->
     <h2 id="footnote-label">Footnotes</h2>
     <ol>
-      {% for note in page.footnotes %}
+      {% for note in footnotes %}
         <li id="{{ note.id }}">
-          {{ note.text }}
+          {{ note.text | safe }}
           <a class="footnotes-back-link" href="#{{ note.id }}-ref" aria-label="Back to content">↩</a>
           {% if note.count == 2 %}
             <a class="footnotes-back-link" href="#{{ note.id }}2-ref" aria-label="Back to second reference to content">↩</a>

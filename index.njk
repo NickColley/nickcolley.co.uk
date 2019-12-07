@@ -1,37 +1,38 @@
 ---
-layout: default
+title: Home
+layout: layouts/default.njk
 ---
 
 <div class="home">
   <h1 class="heading">
-    nick colley
-    <small class="sub-heading">developer – designer</small>
+    Nick Colley
+    <small class="sub-heading">Developer – Designer</small>
   </h1>
   <hr>
   <nav role="navigation">
     <h2>social</h2>
     <ul class="menu">
       <li class="menu-item">
-        <a class="menu-item-link" href="https://www.twitter.com/nickcolley">twitter</a>
+        <a class="menu-item-link" href="https://www.twitter.com/nickcolley">Twitter</a>
       </li>
       <li class="menu-item">
-        <a class="menu-item-link" href="https://github.com/nickcolley">github</a>
+        <a class="menu-item-link" href="https://github.com/nickcolley">GitHub</a>
       </li>
       <li class="menu-item">
-        <a class="menu-item-link" href="https://glitch.com/@nickcolley">glitch</a>
+        <a class="menu-item-link" href="https://glitch.com/@nickcolley">Glitch</a>
       </li>
       <li class="menu-item">
         <a class="menu-item-link" href="https://codepen.io/nickcolley">
-          codepen <small>(old)</small>
+          Codepen <small>(old)</small>
         </a>
       </li>
     </ul>
   </nav>
   <hr>
-  <h2>projects</h2>
+  <h2>Projects</h2>
   <ul class="post-list">
     <li class="post-list-item">
-      <small class="post-meta">november 22, 2018</small>
+      <small class="post-meta">November 22, 2018</small>
 
       <h3 class="post-list-heading">
         <a class="post-link" href="https://github-dependents.glitch.me">
@@ -40,7 +41,7 @@ layout: default
       </h3>
     </li>
     <li class="post-list-item">
-      <small class="post-meta">may 26, 2018</small>
+      <small class="post-meta">May 26, 2018</small>
 
       <h3 class="post-list-heading">
         <a class="post-link" href="https://do-not-track-third-party-embeds.glitch.me">
@@ -49,7 +50,7 @@ layout: default
       </h3>
     </li>
     <li class="post-list-item">
-      <small class="post-meta">feb 13, 2018</small>
+      <small class="post-meta">February 13, 2018</small>
 
       <h3 class="post-list-heading">
         <a class="post-link" href="https://github.com/nickcolley/jest-axe">
@@ -59,18 +60,16 @@ layout: default
     </li>
   </ul>
   <hr>
-  <h2>posts</h2>
+  <h2>Posts</h2>
   <ul class="post-list">
-    {% for post in site.posts %}
-      {% capture post_url %}{{ post.url | relative_url }}{% endcapture %}
-      {% if post.redirect_url %}
-        {% capture post_url %}{{ post.redirect_url }}{% endcapture %}
-      {% endif %}
+    {% for post in collections.post | reverse %}
       <li class="post-list-item">
-        <small class="post-meta">{{ post.date | date: "%B %-d, %Y" | downcase }}</small>
+        <small class="post-meta">{{ post.data.date | date("MMMM d, yyyy") }}</small>
 
         <h3 class="post-list-heading">
-          <a class="post-link" href="{{ post_url }}">{{ post.title | escape }}</a>
+          <a class="post-link" href="{{ post.data.redirectUrl if post.data.redirectUrl else post.url }}">
+            {{ post.data.title }}
+          </a>
         </h3>
       </li>
     {% endfor %}

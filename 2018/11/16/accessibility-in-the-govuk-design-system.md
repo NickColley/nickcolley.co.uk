@@ -265,11 +265,6 @@ footnotes:
     }
   }
 
-  .slides-thumbnail:focus {
-    outline: 3px solid blue;
-    outline-offset: 0;
-  }
-
   .slides-thumbnail img {
     height: 100%;
     width: 100%;

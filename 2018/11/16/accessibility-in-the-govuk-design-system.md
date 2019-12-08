@@ -1,8 +1,9 @@
 ---
 layout: layouts/post.njk
-title:  "Design System London: Accessibility in the GOV.UK Design System"
-date:   2018-11-16
-tags:   post
+title: "Design System London: Accessibility in the GOV.UK Design System"
+summary: Speakers notes and slides from my talk at Design System London
+date: 2018-11-16
+tags: post
 
 footnotes:
   - id: tax-your-vehicle

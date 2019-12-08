@@ -1,8 +1,9 @@
 ---
 layout: layouts/post.njk
-title:  Stacking inline elements
-date:   2016-03-27
-tags:   post
+title: Stacking inline elements
+summary: A small tip for how to evenly space inline elements that works when wrapping
+date: 2016-03-27
+tags: post
 ---
 
 <style>

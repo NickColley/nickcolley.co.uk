@@ -337,7 +337,7 @@ All the sources are linked from the speakers notes in the <a href="#footnotes">f
   </figcaption>
 </figure>
 
-## slides
+## Slides
 
 <div class="slides">
   {% from "dsl-accessibility-slide.njk" import slide %}

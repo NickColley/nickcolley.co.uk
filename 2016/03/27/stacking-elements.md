@@ -93,7 +93,7 @@ With inline elements you normally want spacing between,
 this is easy to do but when they are stacking horizontally
 it can lead to problems if not done properly.
 
-## ‘natural’ approach
+## ‘Natural’ approach
 
 This what you'd probably try first off and rightly so,
 it makes sense –
@@ -137,7 +137,7 @@ I want all my buttons to have a margin to the right apart from the last one.
 ```
 
 
-## ‘conditional’ approach
+## ‘Conditional’ approach
 
 This works for the equal spacing however when collapsed there's unwanted left-most margin.
 
@@ -174,7 +174,7 @@ This works for the equal spacing however when collapsed there's unwanted left-mo
 }
 ```
 
-## ‘negative-margin’ approach
+## ‘Negative-margin’ approach
 
 Using a negative margin wrapper there's equal margin between element.
 Only con for using this approach is you can't style the background of the wrapper

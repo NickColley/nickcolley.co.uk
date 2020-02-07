@@ -8,6 +8,7 @@ module.exports = function(eleventyConfig) {
     // Allow assets e.g. images to be accessed
     eleventyConfig.addPassthroughCopy('assets')
     eleventyConfig.addPassthroughCopy('favicon.ico')
+    eleventyConfig.addPassthroughCopy('2020/**/*.png')
 
     // Custom filters
     eleventyConfig.addFilter("date", function(date, formatString) {

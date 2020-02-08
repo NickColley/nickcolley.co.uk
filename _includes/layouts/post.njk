@@ -3,6 +3,8 @@ layout: layouts/default.njk
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   <header class="post-header">
+    <a href="/">Home</a>
+    <hr>
     <p class="sub-heading post-meta">
       <time datetime="{{ page.date | dateISO }}" itemprop="datePublished">
         {{ page.date | date("MMMM d, yyyy") }}
@@ -16,7 +18,7 @@ layout: layouts/default.njk
   {% include "footnotes.njk" %}
   <hr>
   <p class="clearfix">
-    <a class="pull-left" href="/">more posts</a>
-    <a class="pull-right" href="//www.twitter.com/nickcolley">@nickcolley</a>
+    <a class="pull-left" href="/">More posts</a>
+    <a class="pull-right" href="//www.twitter.com/nickcolley">@NickColley</a>
   </p>
 </article>

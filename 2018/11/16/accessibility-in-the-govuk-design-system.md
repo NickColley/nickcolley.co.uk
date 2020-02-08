@@ -249,12 +249,10 @@ footnotes:
 
 <style media="screen">
   .slides-thumbnail {
-    box-sizing: content-box;
     display: block;
     height: 192.5px;
     width: 342px;
     max-width: 100%;
-    border: 3px solid #9E9E9E;
     margin-bottom: 1rem;
   }
 
@@ -263,11 +261,6 @@ footnotes:
       width: 100%;
       height: 160px;
     }
-  }
-
-  .slides-thumbnail:focus {
-    outline: 3px solid blue;
-    outline-offset: 0;
   }
 
   .slides-thumbnail img {
@@ -290,10 +283,6 @@ footnotes:
     .slides figcaption {
       font-size: .9rem;
     }
-  }
-
-  .slides figure {
-    margin-bottom: 3rem;
   }
 
   .slides figcaption > :first-child::before,

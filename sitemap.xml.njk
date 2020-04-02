@@ -1,0 +1,17 @@
+---
+eleventyExcludeFromCollections: true
+permalink: /sitemap.xml
+metadata:
+  title: My Blog Title
+  url: https://nickcolley.co.uk
+---
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for page in collections.all %}
+  {% set absoluteUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  <url>
+    <loc>{{ absoluteUrl }}</loc>
+    <lastmod>{{ page.date | rssDate }}</lastmod>
+  </url>
+{%- endfor %}
+</urlset>

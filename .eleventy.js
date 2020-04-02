@@ -1,9 +1,11 @@
 const fs = require('fs')
 const dateFunctions = require('date-fns')
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight")
+const rss = require("@11ty/eleventy-plugin-rss")
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addPlugin(syntaxHighlight)
+    eleventyConfig.addPlugin(rss)
 
     // Allow assets e.g. images to be accessed
     eleventyConfig.addPassthroughCopy('assets')

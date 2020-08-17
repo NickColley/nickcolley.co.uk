@@ -148,6 +148,11 @@ blockquote {
     font-variation-settings: "wght" 70, "wdth" 500;
 }
 
+.back-link {
+    display: inline-block;
+    margin-bottom: .3rem;
+}
+
 .menu {
     list-style: none;
     padding: 0;

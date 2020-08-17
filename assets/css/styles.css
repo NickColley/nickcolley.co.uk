@@ -3,6 +3,7 @@
     src: url('/assets/fonts/Barlow.woff2') format('woff2-variations');
     font-family: Barlow;
     font-weight: 1 999;
+    font-display: fallback;
 }
 
 *, *:after, *:before {

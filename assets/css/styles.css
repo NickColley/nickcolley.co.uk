@@ -281,3 +281,9 @@ blockquote {
     border: 0 !important;
     white-space: nowrap !important
 }
+
+@media print {
+    * {
+        font-family: -apple-system, HelveticaNeue, Helvetica, Arial, sans-serif;
+    }
+}

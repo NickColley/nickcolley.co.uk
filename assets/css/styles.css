@@ -27,7 +27,7 @@ html {
 
 @media (max-width: 40rem) {
     html {
-    font-size: 18px;
+        font-size: 20px;
     }
 }
 
@@ -133,9 +133,9 @@ blockquote {
     margin-bottom: 2.25rem;
     font-variation-settings: "wght" 160, "wdth" 500;
 }
-@media (max-width: 30rem) {
+@media (max-width: 40rem) {
     .heading {
-    font-size: 2.25rem;
+        font-size: 2rem;
     }
 }
 
@@ -209,9 +209,6 @@ blockquote {
     font-variation-settings: "wght" 80, "wdth" 500;
 }
 
-.post-heading {
-}
-
 .post-meta {
     color: #444;
     margin-bottom: .5rem;
@@ -230,10 +227,6 @@ blockquote {
     text-align: right;
 }
 
-.text-center {
-    /*text-align: center;*/
-}
-
 .clearfix:after {
     content: '';
     display: table;
@@ -242,7 +235,7 @@ blockquote {
 
 @media (min-width: 30rem) {
     .footnotes {
-    font-size: .8rem;
+        font-size: .8rem;
     }
 }
 

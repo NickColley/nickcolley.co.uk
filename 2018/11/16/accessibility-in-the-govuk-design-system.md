@@ -318,7 +318,7 @@ I’ve put together some of the tweets in a [Twitter moment, if you’re into th
 All the sources are linked from the speakers notes in the <a href="#footnotes">footnotes</a>.
 
 <figure>
-  <img src="/assets/img/dsl-accessibility-talk.jpg" alt="Nick stood in front of a slide using Star Wars to explain accessibility legislation">
+  <img src="/assets/img/dsl-accessibility-talk.jpg" alt="Nick stood in front of a slide using Star Wars to explain accessibility legislation. Jedis are using the Equality Act and Public Sector Accessibility Regulations as a weapon against the Sith.">
   <figcaption>
     <a href="https://youtu.be/OeyMEDPnPcE">
       YouTube: Design Systems London (note: there are no subtitles)

@@ -60,6 +60,4 @@ You'll be using `replaceState` more often, since it tends to work better with co
 - [A tab component](https://inclusive-components.design/tabbed-interfaces/)
 - [An accordion component](https://inclusive-components.design/collapsible-sections/)
 
-Update: Thanks to Adam Silver for a [correction around internal anchor links](https://twitter.com/adambsilver/status/1006786720879316996) 🙂
-
 Did I miss something, or there a different way of using this API? Send me a tweet [@nickcolley](https://twitter.com/nickcolley)

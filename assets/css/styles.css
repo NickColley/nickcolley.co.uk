@@ -1,4 +1,19 @@
-
+:root {
+    --white: #FAFAFA;
+    --black: #222;
+    --gray: #b1b4b6;
+    --blue: #1d70b8;
+    
+    --border-radius: 0.6rem;
+    --text-color: var(--black);
+    --background-color: var(--white);
+    --code-background-color: transparent;
+    --link-color: var(--blue);
+    --line-width-2: 0.2rem;
+    --line-width-1: 0.1rem;
+    --outline-width: var(--line-width-1);
+    --outline-offset: 4px;
+}
 @font-face {
     src: url('/assets/fonts/Barlow.woff2') format('woff2-variations');
     font-family: Barlow;
@@ -11,17 +26,17 @@
 }
 
 :focus {
-    outline: 2px dotted;
-    outline-offset: 2px;
+    outline: var(--outline-width) dotted;
+    outline-offset: var(--outline-offset);
 }
 
 html {
     box-sizing: border-box;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background-color: #FAFAFA;
-    color: #222;
+    background-color: var(--background-color);
+    color: var(--text-color);
     font-family: Barlow, -apple-system, HelveticaNeue, Helvetica, Arial, sans-serif;
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-variation-settings: "wght" 70, "wdth" 500;
 }
 
@@ -40,7 +55,7 @@ body {
 }
 
 a {
-    color: blue;
+    color: var(--link-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -61,7 +76,7 @@ hr {
     margin-top: 0;
     margin-bottom: 1.5rem;
     border-top: 0;
-    border-bottom: 1px dashed #CCC;
+    border-bottom: var(--line-width-1) dashed var(--gray);
 }
 
 p {
@@ -70,29 +85,26 @@ p {
 
 pre,
 code {
+    font-size: 0.9rem;
     font-family: monospace, monospace;
-    background-color: aliceblue;
+    background-color: var(--code-background-color);
 }
 
 pre {
     overflow-y: auto;
     margin-top: 0;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    font-size: 1rem;
-    line-height: 1.8;
-    border: 1px dashed #CCC;
-}
-
-code {
-    font-size: 1rem;
-    background: aliceblue;
+    padding: 1em;
+    border: var(--line-width-1) dashed var(--gray);
+    border-radius: var(--border-radius);
 }
 
 :not(pre) > code {
-    padding: 0 0.2em;
+    padding: 0 0.3em 0.1em;
+    line-height: 1;
     margin: 0 0.2em;
-    border: 1px dashed #CCC;
+    border: var(--line-width-1) dashed var(--gray);
+    border-radius: var(--border-radius);
+    white-space: nowrap;
 }
 
 figure {
@@ -100,16 +112,19 @@ figure {
     margin-bottom: 2rem;
 }
 
-main img {
-    border: 2px solid #9E9E9E;
+main img,
+main .svg {
+    border: var(--line-width-1) solid var(--gray);
+    border-radius: var(--border-radius);
     max-width: 100%;
+}
+
+main img {
     height: auto;
 }
 
 main .svg {
     max-height: 66vh;
-    border: 2px solid #9E9E9E;
-    max-width: 100%;
     aspect-ratio: var(--aspect-ratio-x, 1)/var(--aspect-ratio-y, 1);
 }
 
@@ -122,9 +137,10 @@ main .svg svg {
 main ol,
 main ul,
 main p,
+main pre,
 main figure,
 main .svg {
-    margin-bottom: 2rem;
+    margin-bottom: 1.8rem;
     line-height: 1.5;
 }
 
@@ -139,16 +155,16 @@ main ol > li {
 }
 
 blockquote {
-    border-left: .3rem solid #9E9E9E;
+    border-left: var(--line-width-2) solid var(--gray);
     margin-left: 0;
     padding-left: 1rem;
 }
 
-.language-css .token.selector { color: blue; }
+.language-css .token.selector { color: var(--blue); }
 .language-javascript .token.constant,
-.language-javascript .token.function { color: blue; }
+.language-javascript .token.function { color: var(--blue); }
 .language-javascript .token.string { color: #3f51b5; }
-.language-javascript .token.number { color: blue; }
+.language-javascript .token.number { color: var(--blue); }
 
 .heading {
     font-size: 3.25rem;
@@ -173,7 +189,7 @@ blockquote {
 
 .back-link {
     display: inline-block;
-    margin-bottom: .3rem;
+    margin-bottom: 1rem;
 }
 
 .menu {
@@ -280,8 +296,8 @@ blockquote {
 }
 
 .footnotes :target {
-    outline: 2px dashed blue;
-    outline-offset: 2px;
+    outline: var(--outline-width) dashed var(--link-color);
+    outline-offset: var(--outline-offset);
 }
 
 .footnotes-back-link {

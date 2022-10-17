@@ -163,7 +163,7 @@ Make sure your headphones are plugged in.
 
 Find a full [walkthrough of creating a Multi-Output Device on the Blackhole wiki](https://github.com/ExistentialAudio/BlackHole/wiki/Multi-Output-Device).
 
-{% image "./2022/10/13/multi-output-device.png", "Midi Audio Device > Multi-Output Device with Blackhole and Headphones selected" %}
+{% image "./2022/10/13/multi-output-device.png", "Midi Audio Device showing Multi-Output Device with Blackhole and Headphones selected" %}
 
 ## 3. Create an Aggregate Device to mix together your Microphone and Blackhole
 
@@ -199,7 +199,7 @@ window.NODES = [
 
 Find a full [walkthrough of creating a Aggregate Device on the Blackhole wiki](https://github.com/ExistentialAudio/BlackHole/wiki/Aggregate-Device).
 
-{% image "./2022/10/13/aggregate-device.png", "Midi Audio Device > Aggregate Device with Blackhole and Microphone selected" %}
+{% image "./2022/10/13/aggregate-device.png", "Midi Audio Device showing Aggregate Device with Blackhole and Microphone selected" %}
 
 ## 4. Configure VoiceOver to use Multi-Output Device
 
@@ -222,7 +222,7 @@ window.NODES = [
 1. Open the VoiceOver Utility window by opening Spotlight with `command ⌘` + `space` and typing `VoiceOver Utility`.
 1. Go to the Sound tab and set the Output Device option to Multi-Output Device.
 
-{% image "./2022/10/13/voiceover-utility-sound.png", "VoiceOver Utility > Sound > Output Device set to Multi-Output Device" %}
+{% image "./2022/10/13/voiceover-utility-sound.png", "VoiceOver Utility showing Sound tab showing Output Device set to Multi-Output Device" %}
 
 ## 5. Configure Voice Call to use Aggregate Device
 
@@ -249,4 +249,4 @@ window.NODES = [
 1. Open your Voice Call settings and set your input to Aggregate Device.
 1. Ensure any Noise Cancellation is turned off.
 
-{% image "./2022/10/13/voice-call-settings.png", "Google Meet Settings > Audio > Microphone dropdown set to Aggregate Device, Noise Cancellation turned off" %}
+{% image "./2022/10/13/voice-call-settings.png", "Google Meet Settings showing Audio tab showing Microphone dropdown set to Aggregate Device, Noise Cancellation turned off" %}

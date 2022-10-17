@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: How to send VoiceOver Audio to a Voice Call
+title: How to send VoiceOver audio to a voice call
 summary: How to send the audio from VoiceOver to a voice call like Google Meet, Zoom or Microsoft Teams.
 date: 2022-10-13
 tags: post

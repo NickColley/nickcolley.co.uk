@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p + h2,
 pre + h2 {
-    margin-top: 2.25rem;
+    margin-top: 3rem;
 }
 
 hr {
@@ -68,11 +68,10 @@ p {
     margin-top: 0;
 }
 
-/* Force relative sizing to work properly, with a hack */
 pre,
 code {
     font-family: monospace, monospace;
-    font-size: 1em;
+    background-color: aliceblue;
 }
 
 pre {
@@ -80,16 +79,20 @@ pre {
     margin-top: 0;
     margin-bottom: 1rem;
     padding: 1rem;
-    background-color: aliceblue;
-    color: #444;
-    font-size: .8rem;
+    font-size: 1rem;
     line-height: 1.8;
     border: 1px dashed #CCC;
 }
 
 code {
-    font-size: .8rem;
+    font-size: 1rem;
     background: aliceblue;
+}
+
+:not(pre) > code {
+    padding: 0 0.2em;
+    margin: 0 0.2em;
+    border: 1px dashed #CCC;
 }
 
 figure {
@@ -100,12 +103,27 @@ figure {
 main img {
     border: 2px solid #9E9E9E;
     max-width: 100%;
+    height: auto;
+}
+
+main .svg {
+    max-height: 66vh;
+    border: 2px solid #9E9E9E;
+    max-width: 100%;
+    aspect-ratio: var(--aspect-ratio-x, 1)/var(--aspect-ratio-y, 1);
+}
+
+main .svg svg {
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 
 main ol,
 main ul,
 main p,
-main figure {
+main figure,
+main .svg {
     margin-bottom: 2rem;
     line-height: 1.5;
 }
@@ -113,6 +131,11 @@ main figure {
 main ol,
 main ul {
     padding-left: 1em;
+}
+
+main ul > li,
+main ol > li {
+    margin-bottom: 0.4em;
 }
 
 blockquote {
@@ -130,6 +153,7 @@ blockquote {
 .heading {
     font-size: 3.25rem;
     margin-bottom: 2.25rem;
+    line-height: 1.1;
     font-variation-settings: "wght" 160, "wdth" 500;
 }
 @media (max-width: 40rem) {

@@ -14,6 +14,7 @@ module.exports = function (eleventyConfig) {
     let metadata = await eleventyImg(src, {
       widths: ["auto"],
       formats: ["avif", "jpeg", "png", "webp"],
+      outputDir: path.join("_site", "img")
     });
 
     let imageAttributes = {
@@ -34,7 +35,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("favicon.ico");
   eleventyConfig.addPassthroughCopy("2020/**/*.png");
-  eleventyConfig.addPassthroughCopy("img");
 
   // Custom filters
   eleventyConfig.addFilter("date", function (date, formatString) {

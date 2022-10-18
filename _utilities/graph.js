@@ -135,12 +135,13 @@ async function graph(CONTENT, SVG_WIDTH, SVG_HEIGHT, TITLE, NAMESPACE) {
 
       listItem
         .append("rect")
-        .attr("fill", `var(--background-color, white)`)
+        .attr("fill", "var(--background-color, white)")
         .attr("stroke", "currentColor")
-        .attr("stroke-width", strokeWidth)
+        .attr("stroke-width", `var(--line-width-1, ${strokeWidth})`)
         .attr("x", x)
         .attr("y", y)
         .attr("rx", borderRadius)
+        .attr("style", `rx: var(--border-radius, ${borderRadius})`)
         .attr("width", rectWidth + padding / 2)
         .attr("height", rectHeight)
         .attr("role", "presentation")
@@ -185,7 +186,7 @@ async function graph(CONTENT, SVG_WIDTH, SVG_HEIGHT, TITLE, NAMESPACE) {
             .attr("d", link)
             .attr("fill", "none")
             .attr("stroke", "currentColor")
-            .attr("stroke-width", strokeWidth)
+            .attr("stroke-width", `var(--line-width-1, ${strokeWidth})`)
             .attr("marker-end", `url(#${NAMESPACE}-triangle)`)
             .attr("role", "presentation")
             .attr("aria-hidden", "true");

@@ -295,6 +295,7 @@ blockquote {
   font-size: 1rem;
   font-weight: normal;
   font-variation-settings: "wght" 80, "wdth" 500;
+  line-height: 1.5;
 }
 
 .post-meta {

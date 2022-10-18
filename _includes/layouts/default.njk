@@ -8,11 +8,30 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/styles.css" />
   </head>
   <body>
-    <main class="page-content" aria-label="Content">
+    {# Set theme inline to prevent flashing of default theme. -#}
+    <script>
+      const theme = localStorage.getItem("theme");
+      if (theme) document.documentElement.dataset.theme = theme;
+    </script>
+    <main class="page-content">
       <div class="wrapper">
         {{ content | safe }}
       </div>
     </main>
+    <hr>
+    <footer>
+      <fieldset hidden data-theme-select>
+        <legend>Theme</legend>
+        <div class="field">
+            <input class="visually-hidden" id="light" value="light" name="theme" type="radio" checked/>
+            <label for="light">Light</label>
+        </div>
+        <div class="field">
+            <input class="visually-hidden" id="dark" value="dark" name="theme" type="radio" />
+            <label for="dark">Dark</label>
+        </div>
+      </fieldset>
+    <footer>
+    <script src="/assets/js/theme.js"></script>
   </body>
-
 </html>

@@ -135,7 +135,7 @@ async function graph(CONTENT, SVG_WIDTH, SVG_HEIGHT, TITLE, NAMESPACE) {
 
       listItem
         .append("rect")
-        .attr("fill", `var(--${NAMESPACE}-rect-background-color, white)`)
+        .attr("fill", `var(--background-color, white)`)
         .attr("stroke", "currentColor")
         .attr("stroke-width", strokeWidth)
         .attr("x", x)

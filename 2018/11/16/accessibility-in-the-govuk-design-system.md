@@ -248,10 +248,14 @@ footnotes:
 ---
 
 <style media="screen">
+  .slides-figure {
+    display: grid;
+    gap: 1rem;
+  }
   .slides-thumbnail {
     display: block;
-    height: 192.5px;
-    width: 342px;
+    height: 7.7rem;
+    width: 13.68rem;
     max-width: 100%;
     margin-bottom: 1rem;
   }
@@ -259,8 +263,12 @@ footnotes:
   @media (max-width: 350px) {
     .slides-thumbnail {
       width: 100%;
-      height: 160px;
+      height: 6.4rem;
     }
+  }
+
+  .slides-thumbnail:focus {
+    --outline-offset: 0.5rem;
   }
 
   .slides-thumbnail img {
@@ -269,15 +277,8 @@ footnotes:
   }
 
   @media (min-width: 50rem) {
-    .slides-thumbnail {
-      float: right;
-      margin-left: 1rem;
-    }
-
-    .slides figure::after {
-      content: '';
-      clear: both;
-      display: table;
+    .slides-figure {
+      grid-template: auto / 10fr 1fr;
     }
 
     .slides figcaption {

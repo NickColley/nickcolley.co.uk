@@ -35,7 +35,7 @@ tags: post
   padding: 5px;
   margin-bottom: .5em;
   border-radius: 2px;
-  background-color: blue;
+  background-color: var(--blue);
   color: white;
   white-space: nowrap;
   font-family: sans-serif;

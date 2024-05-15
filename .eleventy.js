@@ -43,6 +43,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("dateISO", function (date) {
     return date ? dateFunctions.formatISO(new Date(date)) : date;
   });
+  eleventyConfig.addFilter("hostname", function (urlString) {
+    const url = new URL(urlString);
+    return url.hostname;
+  });
 
   // Custom shortcode
   eleventyConfig.addShortcode("slideImagePath", function (slide, optimised) {

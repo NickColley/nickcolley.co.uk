@@ -236,28 +236,6 @@ blockquote {
   margin-bottom: 1rem;
 }
 
-.menu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin: -0.75rem;
-  margin-bottom: 0.75rem;
-}
-.menu:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.menu-item {
-  float: left;
-  padding: 0;
-  margin: 0;
-}
-.menu-item-link {
-  display: block;
-  padding: 0.75rem;
-}
-
 .grid {
   margin-left: -1rem;
   margin-right: -1rem;
